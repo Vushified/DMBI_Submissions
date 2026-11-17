@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="850" viewBox="0 0 1150 850" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1150" height="850" fill="#FAFAFA"/>
+<text x="575.0" y="26" text-anchor="middle" font-size="18px" font-weight="bold" fill="#004D40">Star Schema: EV Fleet Battery Health & Telemetry Analytics (Fact_Battery_Health)</text>
+<path d="M 577.0 202 L 585.0 280" fill="none" stroke="#37474F" stroke-width="1.5" stroke-dasharray="none"/>
+<text x="581.0" y="236.0" text-anchor="middle" font-size="11px" fill="#37474F" font-style="italic">measured at</text>
+<path d="M 298 383.0 L 440 380" fill="none" stroke="#37474F" stroke-width="1.5" stroke-dasharray="none"/>
+<text x="369.0" y="376.5" text-anchor="middle" font-size="11px" fill="#37474F" font-style="italic">monitors</text>
+<path d="M 820 366.0 L 730 380" fill="none" stroke="#37474F" stroke-width="1.5" stroke-dasharray="none"/>
+<text x="775.0" y="368.0" text-anchor="middle" font-size="11px" fill="#37474F" font-style="italic">installed on</text>
+<g>
+<rect x="440" y="280" width="290" height="36" fill="#E0F2F1" stroke="#00695C" stroke-width="1.5" rx="3"/>
+<text x="585.0" y="303.0" text-anchor="middle" font-size="14px" font-weight="bold" fill="#0D47A1">Fact_Battery_Health</text>
+<rect x="440" y="316" width="290" height="34" fill="#FFFFFF" stroke="#00695C" stroke-width="0.8"/>
+<line x1="500" y1="316" x2="500" y2="350" stroke="#00695C" stroke-width="0.8"/>
+<line x1="690" y1="316" x2="690" y2="350" stroke="#00695C" stroke-width="0.8"/>
+<text x="448" y="337.0" font-size="12px" fill="#546E7A">int</text>
+<text x="508" y="337.0" font-size="12px" font-weight="500" fill="#263238">telemetry_id</text>
+<text x="698" y="337.0" font-size="11px" font-weight="bold" fill="#C62828">PK</text>
+<rect x="440" y="350" width="290" height="34" fill="#F8FAFC" stroke="#00695C" stroke-width="0.8"/>
+<line x1="500" y1="350" x2="500" y2="384" stroke="#00695C" stroke-width="0.8"/>
+<line x1="690" y1="350" x2="690" y2="384" stroke="#00695C" stroke-width="0.8"/>
+<text x="448" y="371.0" font-size="12px" fill="#546E7A">int</text>
+<text x="508" y="371.0" font-size="12px" font-weight="500" fill="#263238">battery_pack_id</text>
+<text x="698" y="371.0" font-size="11px" font-weight="bold" fill="#1565C0">FK</text>
+<rect x="440" y="384" width="290" height="34" fill="#FFFFFF" stroke="#00695C" stroke-width="0.8"/>
+<line x1="500" y1="384" x2="500" y2="418" stroke="#00695C" stroke-width="0.8"/>
+<line x1="690" y1="384" x2="690" y2="418" stroke="#00695C" stroke-width="0.8"/>
+<text x="448" y="405.0" font-size="12px" fill="#546E7A">int</text>
+<text x="508" y="405.0" font-size="12px" font-weight="500" fill="#263238">vehicle_id</text>
+<text x="698" y="405.0" font-size="11px" font-weight="bold" fill="#1565C0">FK</text>
+<rect x="440" y="418" width="290" height="34" fill="#F8FAFC" stroke="#00695C" stroke-width="0.8"/>
+<line x1="500" y1="418" x2="500" y2="452" stroke="#00695C" stroke-width="0.8"/>
+<line x1="690" y1="418" x2="690" y2="452" stroke="#00695C" stroke-width="0.8"/>
+<text x="448" y="439.0" font-size="12px" fill="#546E7A">int</text>
+<text x="508" y="439.0" font-size="12px" font-weight="500" fill="#263238">date_id</text>
+<text x="698" y="439.0" font-size="11px" font-weight="bold" fill="#1565C0">FK</text>
+<rect x="440" y="452" width="290" height="34" fill="#FFFFFF" stroke="#00695C" stroke-width="0.8"/>
+<line x1="500" y1="452" x2="500" y2="486" stroke="#00695C" stroke-width="0.8"/>
+<line x1="690" y1="452" x2="690" y2="486" stroke="#00695C" stroke-width="0.8"/>
+<text x="448" y="473.0" font-size="12px" fill="#546E7A">float</text>
+<text x="508" y="473.0" font-size="12px" font-weight="500" fill="#263238">soh_percentage</text>
+<text x="698" y="473.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="440" y="486" width="290" height="34" fill="#F8FAFC" stroke="#00695C" stroke-width="0.8"/>
+<line x1="500" y1="486" x2="500" y2="520" stroke="#00695C" stroke-width="0.8"/>
+<line x1="690" y1="486" x2="690" y2="520" stroke="#00695C" stroke-width="0.8"/>
+<text x="448" y="507.0" font-size="12px" fill="#546E7A">int</text>
+<text x="508" y="507.0" font-size="12px" font-weight="500" fill="#263238">cycle_count</text>
+<text x="698" y="507.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="440" y="520" width="290" height="34" fill="#FFFFFF" stroke="#00695C" stroke-width="0.8"/>
+<line x1="500" y1="520" x2="500" y2="554" stroke="#00695C" stroke-width="0.8"/>
+<line x1="690" y1="520" x2="690" y2="554" stroke="#00695C" stroke-width="0.8"/>
+<text x="448" y="541.0" font-size="12px" fill="#546E7A">float</text>
+<text x="508" y="541.0" font-size="12px" font-weight="500" fill="#263238">internal_res_mohm</text>
+<text x="698" y="541.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="440" y="554" width="290" height="34" fill="#F8FAFC" stroke="#00695C" stroke-width="0.8"/>
+<line x1="500" y1="554" x2="500" y2="588" stroke="#00695C" stroke-width="0.8"/>
+<line x1="690" y1="554" x2="690" y2="588" stroke="#00695C" stroke-width="0.8"/>
+<text x="448" y="575.0" font-size="12px" fill="#546E7A">float</text>
+<text x="508" y="575.0" font-size="12px" font-weight="500" fill="#263238">max_cell_temp_c</text>
+<text x="698" y="575.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="440" y="588" width="290" height="34" fill="#FFFFFF" stroke="#00695C" stroke-width="0.8"/>
+<line x1="500" y1="588" x2="500" y2="622" stroke="#00695C" stroke-width="0.8"/>
+<line x1="690" y1="588" x2="690" y2="622" stroke="#00695C" stroke-width="0.8"/>
+<text x="448" y="609.0" font-size="12px" fill="#546E7A">float</text>
+<text x="508" y="609.0" font-size="12px" font-weight="500" fill="#263238">cell_delta_mv</text>
+<text x="698" y="609.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="440" y="622" width="290" height="34" fill="#F8FAFC" stroke="#00695C" stroke-width="0.8"/>
+<line x1="500" y1="622" x2="500" y2="656" stroke="#00695C" stroke-width="0.8"/>
+<line x1="690" y1="622" x2="690" y2="656" stroke="#00695C" stroke-width="0.8"/>
+<text x="448" y="643.0" font-size="12px" fill="#546E7A">bool</text>
+<text x="508" y="643.0" font-size="12px" font-weight="500" fill="#263238">thermal_warning_flag</text>
+<text x="698" y="643.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+</g>
+<g>
+<rect x="460" y="30" width="234" height="36" fill="#FFF3E0" stroke="#EF6C00" stroke-width="1.5" rx="3"/>
+<text x="577.0" y="53.0" text-anchor="middle" font-size="14px" font-weight="bold" fill="#0D47A1">Dim_Time_Date</text>
+<rect x="460" y="66" width="234" height="34" fill="#FFFFFF" stroke="#EF6C00" stroke-width="0.8"/>
+<line x1="520" y1="66" x2="520" y2="100" stroke="#EF6C00" stroke-width="0.8"/>
+<line x1="654" y1="66" x2="654" y2="100" stroke="#EF6C00" stroke-width="0.8"/>
+<text x="468" y="87.0" font-size="12px" fill="#546E7A">int</text>
+<text x="528" y="87.0" font-size="12px" font-weight="500" fill="#263238">date_id</text>
+<text x="662" y="87.0" font-size="11px" font-weight="bold" fill="#C62828">PK</text>
+<rect x="460" y="100" width="234" height="34" fill="#F8FAFC" stroke="#EF6C00" stroke-width="0.8"/>
+<line x1="520" y1="100" x2="520" y2="134" stroke="#EF6C00" stroke-width="0.8"/>
+<line x1="654" y1="100" x2="654" y2="134" stroke="#EF6C00" stroke-width="0.8"/>
+<text x="468" y="121.0" font-size="12px" fill="#546E7A">date</text>
+<text x="528" y="121.0" font-size="12px" font-weight="500" fill="#263238">full_date</text>
+<text x="662" y="121.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="460" y="134" width="234" height="34" fill="#FFFFFF" stroke="#EF6C00" stroke-width="0.8"/>
+<line x1="520" y1="134" x2="520" y2="168" stroke="#EF6C00" stroke-width="0.8"/>
+<line x1="654" y1="134" x2="654" y2="168" stroke="#EF6C00" stroke-width="0.8"/>
+<text x="468" y="155.0" font-size="12px" fill="#546E7A">int</text>
+<text x="528" y="155.0" font-size="12px" font-weight="500" fill="#263238">month</text>
+<text x="662" y="155.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="460" y="168" width="234" height="34" fill="#F8FAFC" stroke="#EF6C00" stroke-width="0.8"/>
+<line x1="520" y1="168" x2="520" y2="202" stroke="#EF6C00" stroke-width="0.8"/>
+<line x1="654" y1="168" x2="654" y2="202" stroke="#EF6C00" stroke-width="0.8"/>
+<text x="468" y="189.0" font-size="12px" fill="#546E7A">int</text>
+<text x="528" y="189.0" font-size="12px" font-weight="500" fill="#263238">year</text>
+<text x="662" y="189.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+</g> <g>
+<rect x="40" y="280" width="258" height="36" fill="#EDE7F6" stroke="#512DA8" stroke-width="1.5" rx="3"/>
+<text x="169.0" y="303.0" text-anchor="middle" font-size="14px" font-weight="bold" fill="#0D47A1">Dim_Battery_Pack</text>
+<rect x="40" y="316" width="258" height="34" fill="#FFFFFF" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="100" y1="316" x2="100" y2="350" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="258" y1="316" x2="258" y2="350" stroke="#512DA8" stroke-width="0.8"/>
+<text x="48" y="337.0" font-size="12px" fill="#546E7A">int</text>
+<text x="108" y="337.0" font-size="12px" font-weight="500" fill="#263238">battery_pack_id</text>
+<text x="266" y="337.0" font-size="11px" font-weight="bold" fill="#C62828">PK</text>
+<rect x="40" y="350" width="258" height="34" fill="#F8FAFC" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="100" y1="350" x2="100" y2="384" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="258" y1="350" x2="258" y2="384" stroke="#512DA8" stroke-width="0.8"/>
+<text x="48" y="371.0" font-size="12px" fill="#546E7A">string</text>
+<text x="108" y="371.0" font-size="12px" font-weight="500" fill="#263238">serial_number</text>
+<text x="266" y="371.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="40" y="384" width="258" height="34" fill="#FFFFFF" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="100" y1="384" x2="100" y2="418" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="258" y1="384" x2="258" y2="418" stroke="#512DA8" stroke-width="0.8"/>
+<text x="48" y="405.0" font-size="12px" fill="#546E7A">string</text>
+<text x="108" y="405.0" font-size="12px" font-weight="500" fill="#263238">cell_format</text>
+<text x="266" y="405.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="40" y="418" width="258" height="34" fill="#F8FAFC" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="100" y1="418" x2="100" y2="452" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="258" y1="418" x2="258" y2="452" stroke="#512DA8" stroke-width="0.8"/>
+<text x="48" y="439.0" font-size="12px" fill="#546E7A">float</text>
+<text x="108" y="439.0" font-size="12px" font-weight="500" fill="#263238">nominal_voltage</text>
+<text x="266" y="439.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="40" y="452" width="258" height="34" fill="#FFFFFF" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="100" y1="452" x2="100" y2="486" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="258" y1="452" x2="258" y2="486" stroke="#512DA8" stroke-width="0.8"/>
+<text x="48" y="473.0" font-size="12px" fill="#546E7A">string</text>
+<text x="108" y="473.0" font-size="12px" font-weight="500" fill="#263238">cooling_type</text>
+<text x="266" y="473.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+</g> <g>
+<rect x="820" y="280" width="242" height="36" fill="#EDE7F6" stroke="#512DA8" stroke-width="1.5" rx="3"/>
+<text x="941.0" y="303.0" text-anchor="middle" font-size="14px" font-weight="bold" fill="#0D47A1">Dim_EV_Vehicle</text>
+<rect x="820" y="316" width="242" height="34" fill="#FFFFFF" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="880" y1="316" x2="880" y2="350" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="1022" y1="316" x2="1022" y2="350" stroke="#512DA8" stroke-width="0.8"/>
+<text x="828" y="337.0" font-size="12px" fill="#546E7A">int</text>
+<text x="888" y="337.0" font-size="12px" font-weight="500" fill="#263238">vehicle_id</text>
+<text x="1030" y="337.0" font-size="11px" font-weight="bold" fill="#C62828">PK</text>
+<rect x="820" y="350" width="242" height="34" fill="#F8FAFC" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="880" y1="350" x2="880" y2="384" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="1022" y1="350" x2="1022" y2="384" stroke="#512DA8" stroke-width="0.8"/>
+<text x="828" y="371.0" font-size="12px" fill="#546E7A">string</text>
+<text x="888" y="371.0" font-size="12px" font-weight="500" fill="#263238">oem_brand</text>
+<text x="1030" y="371.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="820" y="384" width="242" height="34" fill="#FFFFFF" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="880" y1="384" x2="880" y2="418" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="1022" y1="384" x2="1022" y2="418" stroke="#512DA8" stroke-width="0.8"/>
+<text x="828" y="405.0" font-size="12px" fill="#546E7A">string</text>
+<text x="888" y="405.0" font-size="12px" font-weight="500" fill="#263238">model_name</text>
+<text x="1030" y="405.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="820" y="418" width="242" height="34" fill="#F8FAFC" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="880" y1="418" x2="880" y2="452" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="1022" y1="418" x2="1022" y2="452" stroke="#512DA8" stroke-width="0.8"/>
+<text x="828" y="439.0" font-size="12px" fill="#546E7A">float</text>
+<text x="888" y="439.0" font-size="12px" font-weight="500" fill="#263238">fleet_id</text>
+<text x="1030" y="439.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+</g>
+</svg>

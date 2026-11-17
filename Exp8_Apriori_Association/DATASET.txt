@@ -1,0 +1,6 @@
+Dataset: EV Fleet Preprocessed Dataset (20,000 rows x 11 columns).
+CSV file: EV_Fleet_Preprocessed_Dataset.csv (Included in this folder).
+Transaction CSV: EV_Association_Transactions.csv (8 binary EV operational behavior items).
+Target items: Fast_DC_Charging, High_Energy_Delivered, Low_Arrival_SoC, Full_100_Charge, High_Ambient_Heat, High_Turnaround_Urgency, Long_Dwell_Duration, High_Session_Cost.
+Run script: python apriori_association.py
+

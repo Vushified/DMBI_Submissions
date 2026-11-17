@@ -1,0 +1,6 @@
+Dataset: EV Fleet Preprocessed Dataset (20,000 rows x 11 columns).
+CSV file: EV_Fleet_Preprocessed_Dataset.csv (Included in this folder).
+Target features used for RapidMiner: charging_duration_min, energy_consumed_kwh, initial_soc_pct, final_soc_pct, peak_power_kw, avg_charging_c_rate, battery_capacity_kwh, ambient_temp_c, session_cost_inr, turnaround_urgency_score.
+RapidMiner Slice: 10,000 rows (Free License constraint).
+Run script: python kmeans_rapidminer_comparison.py
+

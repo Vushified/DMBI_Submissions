@@ -1,0 +1,606 @@
+antecedents,consequents,support,confidence,lift
+Long_Dwell_Duration,Full_100_Charge,0.2,1.0,4.4082
+"High_Energy_Delivered, Long_Dwell_Duration",Full_100_Charge,0.194,1.0,4.4082
+"Low_Arrival_SoC, Long_Dwell_Duration",Full_100_Charge,0.1321,1.0,4.4082
+"High_Energy_Delivered, Low_Arrival_SoC, Long_Dwell_Duration",Full_100_Charge,0.1281,1.0,4.4082
+High_Session_Cost,High_Energy_Delivered,0.3837,1.0,1.7082
+"High_Session_Cost, High_Turnaround_Urgency",High_Energy_Delivered,0.3735,1.0,1.7082
+"High_Session_Cost, Fast_DC_Charging",High_Energy_Delivered,0.3728,1.0,1.7082
+"High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency",High_Energy_Delivered,0.3673,1.0,1.7082
+"High_Session_Cost, Low_Arrival_SoC",High_Energy_Delivered,0.3542,1.0,1.7082
+"High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency",High_Energy_Delivered,0.3462,1.0,1.7082
+"High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC",High_Energy_Delivered,0.3453,1.0,1.7082
+"High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",High_Energy_Delivered,0.3404,1.0,1.7082
+"High_Ambient_Heat, High_Session_Cost",High_Energy_Delivered,0.2125,1.0,1.7082
+"High_Ambient_Heat, High_Session_Cost, High_Turnaround_Urgency",High_Energy_Delivered,0.2098,1.0,1.7082
+"High_Ambient_Heat, High_Session_Cost, Fast_DC_Charging",High_Energy_Delivered,0.2093,1.0,1.7082
+"High_Session_Cost, High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency",High_Energy_Delivered,0.2067,1.0,1.7082
+"High_Ambient_Heat, High_Session_Cost, Low_Arrival_SoC",High_Energy_Delivered,0.1994,1.0,1.7082
+"High_Session_Cost, High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency",High_Energy_Delivered,0.1971,1.0,1.7082
+"High_Session_Cost, High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC",High_Energy_Delivered,0.1965,1.0,1.7082
+"High_Ambient_Heat, Low_Arrival_SoC, Fast_DC_Charging, High_Turnaround_Urgency, High_Session_Cost",High_Energy_Delivered,0.1943,1.0,1.7082
+"High_Session_Cost, High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC","High_Energy_Delivered, High_Turnaround_Urgency",0.1943,0.9885,2.5663
+"High_Session_Cost, High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC",High_Turnaround_Urgency,0.1943,0.9885,2.217
+"High_Ambient_Heat, Low_Arrival_SoC, High_Energy_Delivered, Fast_DC_Charging, High_Session_Cost",High_Turnaround_Urgency,0.1943,0.9885,2.217
+"High_Session_Cost, High_Ambient_Heat, Low_Arrival_SoC","High_Energy_Delivered, High_Turnaround_Urgency",0.1971,0.988,2.5648
+"High_Ambient_Heat, High_Session_Cost, Low_Arrival_SoC",High_Turnaround_Urgency,0.1971,0.988,2.2157
+"High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC",High_Turnaround_Urgency,0.1971,0.988,2.2157
+"High_Session_Cost, High_Ambient_Heat, Fast_DC_Charging","High_Energy_Delivered, High_Turnaround_Urgency",0.2067,0.9878,2.5644
+"High_Ambient_Heat, High_Session_Cost, Fast_DC_Charging",High_Turnaround_Urgency,0.2067,0.9878,2.2153
+"High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging",High_Turnaround_Urgency,0.2067,0.9878,2.2153
+"High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC",High_Turnaround_Urgency,0.199,0.9876,2.2148
+"High_Ambient_Heat, High_Session_Cost","High_Energy_Delivered, High_Turnaround_Urgency",0.2098,0.9873,2.5631
+"High_Ambient_Heat, High_Session_Cost",High_Turnaround_Urgency,0.2098,0.9873,2.2142
+"High_Energy_Delivered, High_Session_Cost, High_Ambient_Heat",High_Turnaround_Urgency,0.2098,0.9873,2.2142
+"High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC",High_Turnaround_Urgency,0.2019,0.987,2.2136
+"High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging",High_Turnaround_Urgency,0.2122,0.987,2.2134
+"High_Energy_Delivered, High_Ambient_Heat",High_Turnaround_Urgency,0.2154,0.9865,2.2123
+"High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC","High_Energy_Delivered, High_Turnaround_Urgency",0.3404,0.986,2.5596
+"High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC",High_Turnaround_Urgency,0.3404,0.986,2.2112
+"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC",High_Turnaround_Urgency,0.3404,0.986,2.2112
+"High_Session_Cost, High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency","High_Energy_Delivered, Fast_DC_Charging",0.1943,0.9858,2.5635
+"High_Session_Cost, High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency",Fast_DC_Charging,0.1943,0.9858,2.2308
+"High_Ambient_Heat, Low_Arrival_SoC, High_Energy_Delivered, High_Turnaround_Urgency, High_Session_Cost",Fast_DC_Charging,0.1943,0.9858,2.2308
+"High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC",High_Turnaround_Urgency,0.2177,0.9857,2.2107
+"High_Session_Cost, High_Ambient_Heat, High_Turnaround_Urgency","High_Energy_Delivered, Fast_DC_Charging",0.2067,0.9855,2.5626
+"High_Ambient_Heat, High_Session_Cost, High_Turnaround_Urgency",Fast_DC_Charging,0.2067,0.9855,2.2301
+"High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat, High_Turnaround_Urgency",Fast_DC_Charging,0.2067,0.9855,2.2301
+"High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency",Fast_DC_Charging,0.199,0.9854,2.2299
+"High_Ambient_Heat, Low_Arrival_SoC",High_Turnaround_Urgency,0.2213,0.9853,2.2097
+"High_Session_Cost, High_Ambient_Heat, Low_Arrival_SoC","High_Energy_Delivered, Fast_DC_Charging",0.1965,0.9852,2.562
+"High_Session_Cost, Fast_DC_Charging","High_Energy_Delivered, High_Turnaround_Urgency",0.3673,0.9852,2.5577
+"High_Ambient_Heat, High_Session_Cost, Low_Arrival_SoC",Fast_DC_Charging,0.1965,0.9852,2.2295
+"High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC",Fast_DC_Charging,0.1965,0.9852,2.2295
+"High_Session_Cost, Fast_DC_Charging",High_Turnaround_Urgency,0.3673,0.9852,2.2096
+"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging",High_Turnaround_Urgency,0.3673,0.9852,2.2096
+"High_Ambient_Heat, Fast_DC_Charging",High_Turnaround_Urgency,0.2331,0.9852,2.2095
+"High_Energy_Delivered, High_Ambient_Heat, High_Turnaround_Urgency",Fast_DC_Charging,0.2122,0.9851,2.2293
+"High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC",High_Turnaround_Urgency,0.3504,0.9851,2.2092
+"High_Ambient_Heat, High_Session_Cost","High_Energy_Delivered, Fast_DC_Charging",0.2093,0.9849,2.5613
+"High_Ambient_Heat, High_Session_Cost",Fast_DC_Charging,0.2093,0.9849,2.2289
+"High_Energy_Delivered, High_Session_Cost, High_Ambient_Heat",Fast_DC_Charging,0.2093,0.9849,2.2289
+"High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC",Fast_DC_Charging,0.2015,0.9848,2.2287
+"High_Energy_Delivered, High_Ambient_Heat",Fast_DC_Charging,0.215,0.9847,2.2282
+"High_Energy_Delivered, Fast_DC_Charging",High_Turnaround_Urgency,0.3785,0.9844,2.2077
+"High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency",Fast_DC_Charging,0.2177,0.984,2.2266
+"High_Ambient_Heat, High_Turnaround_Urgency",Fast_DC_Charging,0.2331,0.9837,2.2262
+"High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency","High_Energy_Delivered, Fast_DC_Charging",0.3404,0.9835,2.5576
+"High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency",Fast_DC_Charging,0.3404,0.9835,2.2257
+"High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency",Fast_DC_Charging,0.3404,0.9835,2.2257
+"High_Ambient_Heat, Low_Arrival_SoC",Fast_DC_Charging,0.2208,0.9835,2.2257
+"High_Session_Cost, High_Turnaround_Urgency","High_Energy_Delivered, Fast_DC_Charging",0.3673,0.9831,2.5566
+"High_Session_Cost, High_Turnaround_Urgency",Fast_DC_Charging,0.3673,0.9831,2.2248
+"High_Energy_Delivered, High_Session_Cost, High_Turnaround_Urgency",Fast_DC_Charging,0.3673,0.9831,2.2248
+"High_Energy_Delivered, Low_Arrival_SoC, High_Turnaround_Urgency",Fast_DC_Charging,0.3504,0.983,2.2245
+"High_Energy_Delivered, High_Turnaround_Urgency",Fast_DC_Charging,0.3785,0.9827,2.2239
+"Fast_DC_Charging, Low_Arrival_SoC",High_Turnaround_Urgency,0.4,0.9826,2.2035
+"Low_Arrival_SoC, High_Turnaround_Urgency",Fast_DC_Charging,0.4,0.9824,2.2232
+Fast_DC_Charging,High_Turnaround_Urgency,0.434,0.982,2.2023
+"High_Session_Cost, Low_Arrival_SoC","High_Energy_Delivered, High_Turnaround_Urgency",0.3462,0.9773,2.5371
+"High_Session_Cost, Low_Arrival_SoC",High_Turnaround_Urgency,0.3462,0.9773,2.1917
+"High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC",High_Turnaround_Urgency,0.3462,0.9773,2.1917
+"High_Ambient_Heat, Low_Arrival_SoC, High_Energy_Delivered, Fast_DC_Charging, High_Turnaround_Urgency",High_Session_Cost,0.1943,0.9761,2.5437
+"High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency",High_Session_Cost,0.1971,0.9757,2.5426
+"High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC",High_Session_Cost,0.1965,0.9752,2.5412
+"High_Session_Cost, Low_Arrival_SoC","High_Energy_Delivered, Fast_DC_Charging",0.3453,0.9749,2.5351
+"High_Session_Cost, Low_Arrival_SoC",Fast_DC_Charging,0.3453,0.9749,2.2061
+"High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC",Fast_DC_Charging,0.3453,0.9749,2.2061
+"High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC",High_Session_Cost,0.1994,0.9748,2.5403
+"High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency",High_Session_Cost,0.2067,0.9745,2.5395
+"High_Energy_Delivered, High_Ambient_Heat, High_Turnaround_Urgency",High_Session_Cost,0.2098,0.9742,2.5387
+"High_Session_Cost, High_Ambient_Heat, Low_Arrival_SoC","High_Energy_Delivered, Fast_DC_Charging, High_Turnaround_Urgency",0.1943,0.9739,2.5728
+"High_Session_Cost, High_Ambient_Heat, Low_Arrival_SoC","Fast_DC_Charging, High_Turnaround_Urgency",0.1943,0.9739,2.2443
+"High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC","Fast_DC_Charging, High_Turnaround_Urgency",0.1943,0.9739,2.2443
+"High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging",High_Session_Cost,0.2093,0.9737,2.5374
+"High_Energy_Delivered, High_Ambient_Heat",High_Session_Cost,0.2125,0.9734,2.5366
+High_Session_Cost,"High_Energy_Delivered, High_Turnaround_Urgency",0.3735,0.9734,2.5271
+High_Session_Cost,High_Turnaround_Urgency,0.3735,0.9734,2.183
+"High_Energy_Delivered, High_Session_Cost",High_Turnaround_Urgency,0.3735,0.9734,2.183
+High_Turnaround_Urgency,Fast_DC_Charging,0.434,0.9732,2.2023
+"High_Session_Cost, High_Ambient_Heat","High_Energy_Delivered, Fast_DC_Charging, High_Turnaround_Urgency",0.2067,0.9729,2.5702
+"High_Ambient_Heat, High_Session_Cost","Fast_DC_Charging, High_Turnaround_Urgency",0.2067,0.9729,2.2421
+"High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat","Fast_DC_Charging, High_Turnaround_Urgency",0.2067,0.9729,2.2421
+"High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC","Fast_DC_Charging, High_Turnaround_Urgency",0.199,0.9726,2.2413
+"High_Energy_Delivered, High_Ambient_Heat","Fast_DC_Charging, High_Turnaround_Urgency",0.2122,0.9718,2.2395
+"High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",High_Session_Cost,0.3404,0.9716,2.5319
+High_Session_Cost,"High_Energy_Delivered, Fast_DC_Charging",0.3728,0.9713,2.5259
+High_Session_Cost,Fast_DC_Charging,0.3728,0.9713,2.1981
+"High_Energy_Delivered, High_Session_Cost",Fast_DC_Charging,0.3728,0.9713,2.1981
+"High_Energy_Delivered, Low_Arrival_SoC, High_Turnaround_Urgency",High_Session_Cost,0.3462,0.9711,2.5306
+"High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC",High_Session_Cost,0.3453,0.9708,2.5297
+"High_Energy_Delivered, Fast_DC_Charging, High_Turnaround_Urgency",High_Session_Cost,0.3673,0.9701,2.5281
+Long_Dwell_Duration,"High_Energy_Delivered, Full_100_Charge",0.194,0.97,4.4618
+Long_Dwell_Duration,High_Energy_Delivered,0.194,0.97,1.657
+"Full_100_Charge, Long_Dwell_Duration",High_Energy_Delivered,0.194,0.97,1.657
+"High_Energy_Delivered, High_Turnaround_Urgency",High_Session_Cost,0.3735,0.9698,2.5271
+"Low_Arrival_SoC, Long_Dwell_Duration","High_Energy_Delivered, Full_100_Charge",0.1281,0.9697,4.4605
+"Low_Arrival_SoC, Long_Dwell_Duration",High_Energy_Delivered,0.1281,0.9697,1.6565
+"Full_100_Charge, Low_Arrival_SoC, Long_Dwell_Duration",High_Energy_Delivered,0.1281,0.9697,1.6565
+"High_Ambient_Heat, Low_Arrival_SoC","Fast_DC_Charging, High_Turnaround_Urgency",0.2177,0.9695,2.2341
+"High_Energy_Delivered, Fast_DC_Charging",High_Session_Cost,0.3728,0.9693,2.5259
+"Full_100_Charge, Low_Arrival_SoC",High_Energy_Delivered,0.1502,0.9678,1.6532
+"High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC","High_Session_Cost, High_Turnaround_Urgency",0.1943,0.964,2.5807
+"High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC","High_Session_Cost, High_Turnaround_Urgency",0.1971,0.9631,2.5782
+"High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency","High_Session_Cost, Fast_DC_Charging",0.1943,0.9619,2.5805
+"High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging","High_Session_Cost, High_Turnaround_Urgency",0.2067,0.9619,2.5749
+"High_Session_Cost, Low_Arrival_SoC","High_Energy_Delivered, Fast_DC_Charging, High_Turnaround_Urgency",0.3404,0.9612,2.5391
+"High_Session_Cost, Low_Arrival_SoC","Fast_DC_Charging, High_Turnaround_Urgency",0.3404,0.9612,2.215
+"High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC","Fast_DC_Charging, High_Turnaround_Urgency",0.3404,0.9612,2.215
+"High_Energy_Delivered, High_Ambient_Heat","High_Session_Cost, High_Turnaround_Urgency",0.2098,0.9611,2.5728
+"High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC","High_Session_Cost, Fast_DC_Charging",0.1965,0.9604,2.5766
+"High_Energy_Delivered, High_Ambient_Heat, High_Turnaround_Urgency","High_Session_Cost, Fast_DC_Charging",0.2067,0.9601,2.5756
+"High_Energy_Delivered, High_Ambient_Heat","High_Session_Cost, Fast_DC_Charging",0.2093,0.9588,2.5722
+Full_100_Charge,High_Energy_Delivered,0.2174,0.9583,1.6371
+"High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC","High_Session_Cost, High_Turnaround_Urgency",0.3404,0.9571,2.5622
+High_Session_Cost,"High_Energy_Delivered, Fast_DC_Charging, High_Turnaround_Urgency",0.3673,0.957,2.5281
+High_Session_Cost,"Fast_DC_Charging, High_Turnaround_Urgency",0.3673,0.957,2.2053
+"High_Energy_Delivered, High_Session_Cost","Fast_DC_Charging, High_Turnaround_Urgency",0.3673,0.957,2.2053
+"High_Energy_Delivered, Low_Arrival_SoC, High_Turnaround_Urgency","High_Session_Cost, Fast_DC_Charging",0.3404,0.9551,2.5623
+"High_Energy_Delivered, Fast_DC_Charging","High_Session_Cost, High_Turnaround_Urgency",0.3673,0.955,2.5566
+"High_Energy_Delivered, High_Turnaround_Urgency","High_Session_Cost, Fast_DC_Charging",0.3673,0.9534,2.5577
+High_Ambient_Heat,High_Turnaround_Urgency,0.2369,0.9512,2.1332
+High_Ambient_Heat,Fast_DC_Charging,0.2366,0.9498,2.1494
+"High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC","High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency",0.1943,0.9494,2.5852
+"High_Energy_Delivered, High_Ambient_Heat","High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency",0.2067,0.9471,2.5789
+"High_Session_Cost, High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency","High_Energy_Delivered, Low_Arrival_SoC",0.1943,0.9395,1.9172
+"High_Session_Cost, High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency",Low_Arrival_SoC,0.1943,0.9395,1.7192
+"High_Ambient_Heat, High_Energy_Delivered, Fast_DC_Charging, High_Turnaround_Urgency, High_Session_Cost",Low_Arrival_SoC,0.1943,0.9395,1.7192
+"High_Session_Cost, High_Ambient_Heat, High_Turnaround_Urgency","High_Energy_Delivered, Low_Arrival_SoC",0.1971,0.9392,1.9166
+"High_Ambient_Heat, High_Session_Cost, High_Turnaround_Urgency",Low_Arrival_SoC,0.1971,0.9392,1.7186
+"High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat, High_Turnaround_Urgency",Low_Arrival_SoC,0.1971,0.9392,1.7186
+"High_Session_Cost, High_Ambient_Heat, Fast_DC_Charging","High_Energy_Delivered, Low_Arrival_SoC",0.1965,0.9388,1.9158
+"High_Ambient_Heat, High_Session_Cost, Fast_DC_Charging",Low_Arrival_SoC,0.1965,0.9388,1.7179
+"High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging",Low_Arrival_SoC,0.1965,0.9388,1.7179
+"High_Ambient_Heat, High_Session_Cost","High_Energy_Delivered, Low_Arrival_SoC",0.1994,0.9386,1.9153
+"High_Ambient_Heat, High_Session_Cost",Low_Arrival_SoC,0.1994,0.9386,1.7175
+"High_Energy_Delivered, High_Session_Cost, High_Ambient_Heat",Low_Arrival_SoC,0.1994,0.9386,1.7175
+"High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency",Low_Arrival_SoC,0.199,0.938,1.7164
+"High_Energy_Delivered, High_Ambient_Heat, High_Turnaround_Urgency",Low_Arrival_SoC,0.2019,0.9378,1.716
+"High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging",Low_Arrival_SoC,0.2015,0.9374,1.7153
+"High_Energy_Delivered, High_Ambient_Heat",Low_Arrival_SoC,0.2046,0.9372,1.715
+High_Ambient_Heat,"Fast_DC_Charging, High_Turnaround_Urgency",0.2331,0.9358,2.1564
+"High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency",Low_Arrival_SoC,0.2177,0.9341,1.7093
+"High_Ambient_Heat, High_Turnaround_Urgency",Low_Arrival_SoC,0.2213,0.9339,1.7089
+"High_Ambient_Heat, Fast_DC_Charging",Low_Arrival_SoC,0.2208,0.9336,1.7084
+"High_Session_Cost, High_Ambient_Heat, Fast_DC_Charging","High_Energy_Delivered, Low_Arrival_SoC, High_Turnaround_Urgency",0.1943,0.9281,2.6037
+"High_Session_Cost, High_Ambient_Heat, Fast_DC_Charging","Low_Arrival_SoC, High_Turnaround_Urgency",0.1943,0.9281,2.2798
+"High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging","Low_Arrival_SoC, High_Turnaround_Urgency",0.1943,0.9281,2.2798
+"High_Session_Cost, High_Ambient_Heat","High_Energy_Delivered, Low_Arrival_SoC, High_Turnaround_Urgency",0.1971,0.9273,2.6015
+"High_Ambient_Heat, High_Session_Cost","Low_Arrival_SoC, High_Turnaround_Urgency",0.1971,0.9273,2.2778
+"High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat","Low_Arrival_SoC, High_Turnaround_Urgency",0.1971,0.9273,2.2778
+"High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency","High_Energy_Delivered, Low_Arrival_SoC",0.3404,0.927,1.8917
+"High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency",Low_Arrival_SoC,0.3404,0.927,1.6963
+"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency",Low_Arrival_SoC,0.3404,0.927,1.6963
+"High_Session_Cost, High_Turnaround_Urgency","High_Energy_Delivered, Low_Arrival_SoC",0.3462,0.9266,1.8909
+"High_Session_Cost, High_Turnaround_Urgency",Low_Arrival_SoC,0.3462,0.9266,1.6956
+"High_Energy_Delivered, High_Session_Cost, High_Turnaround_Urgency",Low_Arrival_SoC,0.3462,0.9266,1.6956
+"High_Session_Cost, Fast_DC_Charging","High_Energy_Delivered, Low_Arrival_SoC",0.3453,0.9264,1.8903
+"High_Session_Cost, Fast_DC_Charging",Low_Arrival_SoC,0.3453,0.9264,1.6951
+"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging",Low_Arrival_SoC,0.3453,0.9264,1.6951
+"High_Session_Cost, High_Ambient_Heat, High_Turnaround_Urgency","High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC",0.1943,0.9259,2.603
+"High_Session_Cost, High_Ambient_Heat, High_Turnaround_Urgency","Fast_DC_Charging, Low_Arrival_SoC",0.1943,0.9259,2.2746
+"High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat, High_Turnaround_Urgency","Fast_DC_Charging, Low_Arrival_SoC",0.1943,0.9259,2.2746
+"High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging","Low_Arrival_SoC, High_Turnaround_Urgency",0.199,0.9258,2.2741
+"High_Energy_Delivered, Fast_DC_Charging, High_Turnaround_Urgency",Low_Arrival_SoC,0.3504,0.9256,1.6938
+"High_Energy_Delivered, High_Turnaround_Urgency",Low_Arrival_SoC,0.3564,0.9254,1.6933
+"High_Energy_Delivered, High_Ambient_Heat","Low_Arrival_SoC, High_Turnaround_Urgency",0.2019,0.9251,2.2724
+"High_Energy_Delivered, Fast_DC_Charging",Low_Arrival_SoC,0.3557,0.925,1.6925
+"High_Session_Cost, High_Ambient_Heat","High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC",0.1965,0.9247,2.5997
+"High_Ambient_Heat, High_Session_Cost","Fast_DC_Charging, Low_Arrival_SoC",0.1965,0.9247,2.2717
+"High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat","Fast_DC_Charging, Low_Arrival_SoC",0.1965,0.9247,2.2717
+"High_Energy_Delivered, High_Ambient_Heat, High_Turnaround_Urgency","Fast_DC_Charging, Low_Arrival_SoC",0.199,0.9241,2.2702
+"High_Energy_Delivered, High_Ambient_Heat","Fast_DC_Charging, Low_Arrival_SoC",0.2015,0.923,2.2676
+High_Session_Cost,"High_Energy_Delivered, Low_Arrival_SoC",0.3542,0.923,1.8835
+High_Session_Cost,Low_Arrival_SoC,0.3542,0.923,1.6889
+"High_Energy_Delivered, High_Session_Cost",Low_Arrival_SoC,0.3542,0.923,1.6889
+"Fast_DC_Charging, High_Turnaround_Urgency",Low_Arrival_SoC,0.4,0.9216,1.6865
+Fast_DC_Charging,Low_Arrival_SoC,0.4071,0.9211,1.6855
+"High_Ambient_Heat, Fast_DC_Charging","Low_Arrival_SoC, High_Turnaround_Urgency",0.2177,0.9203,2.2607
+"High_Ambient_Heat, High_Turnaround_Urgency","Fast_DC_Charging, Low_Arrival_SoC",0.2177,0.919,2.2576
+"High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency","High_Session_Cost, Low_Arrival_SoC",0.1943,0.9156,2.5851
+"High_Energy_Delivered, High_Ambient_Heat, High_Turnaround_Urgency","High_Session_Cost, Low_Arrival_SoC",0.1971,0.915,2.5833
+"High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging","High_Session_Cost, Low_Arrival_SoC",0.1965,0.9142,2.5809
+"High_Session_Cost, High_Ambient_Heat","High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",0.1943,0.9141,2.6088
+"High_Session_Cost, High_Ambient_Heat","Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",0.1943,0.9141,2.2856
+"High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat","Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",0.1943,0.9141,2.2856
+"High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",High_Energy_Delivered,0.199,0.9141,1.5615
+"High_Energy_Delivered, High_Ambient_Heat","High_Session_Cost, Low_Arrival_SoC",0.1994,0.9137,2.5795
+"High_Session_Cost, Fast_DC_Charging","High_Energy_Delivered, Low_Arrival_SoC, High_Turnaround_Urgency",0.3404,0.9133,2.5623
+"High_Session_Cost, Fast_DC_Charging","Low_Arrival_SoC, High_Turnaround_Urgency",0.3404,0.9133,2.2435
+"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging","Low_Arrival_SoC, High_Turnaround_Urgency",0.3404,0.9133,2.2435
+High_Turnaround_Urgency,Low_Arrival_SoC,0.4071,0.913,1.6706
+"High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency",High_Energy_Delivered,0.2019,0.9128,1.5592
+"High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC",High_Energy_Delivered,0.2015,0.9124,1.5586
+"High_Energy_Delivered, High_Ambient_Heat","Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",0.199,0.9116,2.2793
+"High_Session_Cost, High_Turnaround_Urgency","High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC",0.3404,0.9114,2.5622
+"High_Session_Cost, High_Turnaround_Urgency","Fast_DC_Charging, Low_Arrival_SoC",0.3404,0.9114,2.239
+"High_Energy_Delivered, High_Session_Cost, High_Turnaround_Urgency","Fast_DC_Charging, Low_Arrival_SoC",0.3404,0.9114,2.239
+"High_Energy_Delivered, Fast_DC_Charging","Low_Arrival_SoC, High_Turnaround_Urgency",0.3504,0.9112,2.2383
+"High_Ambient_Heat, Low_Arrival_SoC",High_Energy_Delivered,0.2046,0.9112,1.5565
+"High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency",High_Energy_Delivered,0.2122,0.9103,1.555
+"High_Energy_Delivered, High_Turnaround_Urgency","Fast_DC_Charging, Low_Arrival_SoC",0.3504,0.9097,2.2348
+"High_Ambient_Heat, High_Turnaround_Urgency",High_Energy_Delivered,0.2154,0.909,1.5528
+"High_Ambient_Heat, Fast_DC_Charging",High_Energy_Delivered,0.215,0.9087,1.5523
+Fast_DC_Charging,"Low_Arrival_SoC, High_Turnaround_Urgency",0.4,0.9051,2.2232
+"High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging","High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency",0.1943,0.9037,2.6107
+"High_Energy_Delivered, High_Ambient_Heat","High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency",0.1971,0.9027,2.6077
+"High_Energy_Delivered, High_Ambient_Heat, High_Turnaround_Urgency","High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC",0.1943,0.902,2.6123
+High_Session_Cost,"High_Energy_Delivered, Low_Arrival_SoC, High_Turnaround_Urgency",0.3462,0.902,2.5306
+High_Session_Cost,"Low_Arrival_SoC, High_Turnaround_Urgency",0.3462,0.902,2.2157
+"High_Energy_Delivered, High_Session_Cost","Low_Arrival_SoC, High_Turnaround_Urgency",0.3462,0.902,2.2157
+High_Ambient_Heat,Low_Arrival_SoC,0.2245,0.9016,1.6498
+"High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC","High_Energy_Delivered, High_Turnaround_Urgency",0.199,0.9011,2.3392
+"High_Energy_Delivered, High_Ambient_Heat","High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC",0.1965,0.9001,2.6068
+High_Session_Cost,"High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC",0.3453,0.8998,2.5297
+High_Session_Cost,"Fast_DC_Charging, Low_Arrival_SoC",0.3453,0.8998,2.2106
+"High_Energy_Delivered, High_Session_Cost","Fast_DC_Charging, Low_Arrival_SoC",0.3453,0.8998,2.2106
+"High_Energy_Delivered, Fast_DC_Charging, High_Turnaround_Urgency","High_Session_Cost, Low_Arrival_SoC",0.3404,0.8994,2.5391
+"High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency","High_Energy_Delivered, Fast_DC_Charging",0.199,0.8994,2.3389
+"High_Ambient_Heat, Low_Arrival_SoC","High_Energy_Delivered, High_Turnaround_Urgency",0.2019,0.8994,2.3348
+"High_Energy_Delivered, High_Turnaround_Urgency","High_Session_Cost, Low_Arrival_SoC",0.3462,0.8986,2.5371
+"High_Energy_Delivered, Fast_DC_Charging","High_Session_Cost, Low_Arrival_SoC",0.3453,0.8979,2.5351
+"High_Ambient_Heat, Low_Arrival_SoC","High_Energy_Delivered, Fast_DC_Charging",0.2015,0.8974,2.3335
+"High_Ambient_Heat, Fast_DC_Charging","High_Energy_Delivered, High_Turnaround_Urgency",0.2122,0.8969,2.3283
+High_Turnaround_Urgency,"Fast_DC_Charging, Low_Arrival_SoC",0.4,0.8969,2.2035
+Low_Arrival_SoC,High_Energy_Delivered,0.49,0.8967,1.5318
+"High_Ambient_Heat, High_Turnaround_Urgency","High_Energy_Delivered, Fast_DC_Charging",0.2122,0.8955,2.3288
+"High_Energy_Delivered, Full_100_Charge",Long_Dwell_Duration,0.194,0.8924,4.4618
+"High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",High_Session_Cost,0.1943,0.8923,2.3252
+"High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency","High_Energy_Delivered, High_Session_Cost",0.1943,0.8923,2.3252
+"High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency",High_Session_Cost,0.1971,0.8906,2.3208
+"High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency","High_Energy_Delivered, High_Session_Cost",0.1971,0.8906,2.3208
+"High_Energy_Delivered, High_Ambient_Heat","High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",0.1943,0.8898,2.6137
+"High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC",High_Session_Cost,0.1965,0.8897,2.3186
+"High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC","High_Energy_Delivered, High_Session_Cost",0.1965,0.8897,2.3186
+High_Ambient_Heat,"Low_Arrival_SoC, High_Turnaround_Urgency",0.2213,0.8884,2.1822
+"High_Ambient_Heat, Low_Arrival_SoC",High_Session_Cost,0.1994,0.8882,2.3146
+"High_Ambient_Heat, Low_Arrival_SoC","High_Energy_Delivered, High_Session_Cost",0.1994,0.8882,2.3146
+High_Session_Cost,"High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",0.3404,0.8872,2.5319
+High_Session_Cost,"Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",0.3404,0.8872,2.2182
+"High_Energy_Delivered, High_Session_Cost","Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",0.3404,0.8872,2.2182
+"High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency",High_Session_Cost,0.2067,0.8871,2.3118
+"High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency","High_Energy_Delivered, High_Session_Cost",0.2067,0.8871,2.3118
+High_Ambient_Heat,"Fast_DC_Charging, Low_Arrival_SoC",0.2208,0.8868,2.1785
+"High_Ambient_Heat, Low_Arrival_SoC","High_Energy_Delivered, Fast_DC_Charging, High_Turnaround_Urgency",0.199,0.8862,2.3411
+"High_Ambient_Heat, High_Turnaround_Urgency",High_Session_Cost,0.2098,0.8856,2.3078
+"High_Ambient_Heat, High_Turnaround_Urgency","High_Energy_Delivered, High_Session_Cost",0.2098,0.8856,2.3078
+"High_Energy_Delivered, Fast_DC_Charging","High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency",0.3404,0.8853,2.5576
+"High_Ambient_Heat, Fast_DC_Charging",High_Session_Cost,0.2093,0.8848,2.3057
+"High_Ambient_Heat, Fast_DC_Charging","High_Energy_Delivered, High_Session_Cost",0.2093,0.8848,2.3057
+"High_Energy_Delivered, High_Turnaround_Urgency","High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC",0.3404,0.8838,2.5596
+Full_100_Charge,Long_Dwell_Duration,0.2,0.8816,4.4082
+"High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC","High_Session_Cost, High_Turnaround_Urgency",0.1943,0.8796,2.3546
+"High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC","High_Energy_Delivered, High_Session_Cost, High_Turnaround_Urgency",0.1943,0.8796,2.3546
+"High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency","High_Session_Cost, Fast_DC_Charging",0.1943,0.878,2.3554
+"High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency","High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging",0.1943,0.878,2.3554
+"High_Ambient_Heat, Low_Arrival_SoC","High_Session_Cost, High_Turnaround_Urgency",0.1971,0.8775,2.3492
+"High_Ambient_Heat, Low_Arrival_SoC","High_Energy_Delivered, High_Session_Cost, High_Turnaround_Urgency",0.1971,0.8775,2.3492
+High_Ambient_Heat,High_Energy_Delivered,0.2183,0.8765,1.4973
+"Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",High_Energy_Delivered,0.3504,0.8761,1.4966
+"Low_Arrival_SoC, High_Turnaround_Urgency",High_Energy_Delivered,0.3564,0.8756,1.4957
+"High_Ambient_Heat, Low_Arrival_SoC","High_Session_Cost, Fast_DC_Charging",0.1965,0.8751,2.3476
+"High_Ambient_Heat, Low_Arrival_SoC","High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging",0.1965,0.8751,2.3476
+High_Ambient_Heat,"Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",0.2177,0.8741,2.1856
+"High_Ambient_Heat, Fast_DC_Charging","High_Session_Cost, High_Turnaround_Urgency",0.2067,0.874,2.3398
+"High_Ambient_Heat, Fast_DC_Charging","High_Energy_Delivered, High_Session_Cost, High_Turnaround_Urgency",0.2067,0.874,2.3398
+"Fast_DC_Charging, Low_Arrival_SoC",High_Energy_Delivered,0.3557,0.8738,1.4927
+"High_Ambient_Heat, High_Turnaround_Urgency","High_Session_Cost, Fast_DC_Charging",0.2067,0.8727,2.3413
+"High_Ambient_Heat, High_Turnaround_Urgency","High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging",0.2067,0.8727,2.3413
+"Fast_DC_Charging, High_Turnaround_Urgency",High_Energy_Delivered,0.3785,0.8723,1.4902
+Fast_DC_Charging,High_Energy_Delivered,0.3846,0.8702,1.4865
+"High_Ambient_Heat, Low_Arrival_SoC","High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency",0.1943,0.8651,2.3555
+"High_Ambient_Heat, Low_Arrival_SoC","High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency",0.1943,0.8651,2.3555
+High_Ambient_Heat,"High_Energy_Delivered, High_Turnaround_Urgency",0.2154,0.8647,2.2448
+High_Turnaround_Urgency,High_Energy_Delivered,0.3852,0.8639,1.4757
+High_Ambient_Heat,"High_Energy_Delivered, Fast_DC_Charging",0.215,0.8631,2.2444
+"Fast_DC_Charging, Low_Arrival_SoC","High_Energy_Delivered, High_Turnaround_Urgency",0.3504,0.8608,2.2348
+"Low_Arrival_SoC, High_Turnaround_Urgency","High_Energy_Delivered, Fast_DC_Charging",0.3504,0.8607,2.2383
+Fast_DC_Charging,"High_Energy_Delivered, High_Turnaround_Urgency",0.3785,0.8566,2.2239
+Full_100_Charge,"High_Energy_Delivered, Long_Dwell_Duration",0.194,0.8552,4.4082
+"High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency","High_Energy_Delivered, Low_Arrival_SoC",0.199,0.8539,1.7425
+High_Ambient_Heat,High_Session_Cost,0.2125,0.8532,2.2234
+High_Ambient_Heat,"High_Energy_Delivered, High_Session_Cost",0.2125,0.8532,2.2234
+"High_Energy_Delivered, Full_100_Charge, Low_Arrival_SoC",Long_Dwell_Duration,0.1281,0.8529,4.2643
+"High_Ambient_Heat, High_Turnaround_Urgency","High_Energy_Delivered, Low_Arrival_SoC",0.2019,0.8525,1.7396
+High_Ambient_Heat,"High_Energy_Delivered, Fast_DC_Charging, High_Turnaround_Urgency",0.2122,0.8518,2.2503
+"High_Ambient_Heat, Fast_DC_Charging","High_Energy_Delivered, Low_Arrival_SoC",0.2015,0.8518,1.7382
+"Full_100_Charge, Low_Arrival_SoC",Long_Dwell_Duration,0.1321,0.8512,4.2558
+"Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",High_Session_Cost,0.3404,0.8512,2.2182
+"Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency","High_Energy_Delivered, High_Session_Cost",0.3404,0.8512,2.2182
+"Low_Arrival_SoC, High_Turnaround_Urgency",High_Session_Cost,0.3462,0.8503,2.2157
+"Low_Arrival_SoC, High_Turnaround_Urgency","High_Energy_Delivered, High_Session_Cost",0.3462,0.8503,2.2157
+High_Turnaround_Urgency,"High_Energy_Delivered, Fast_DC_Charging",0.3785,0.849,2.2077
+"Fast_DC_Charging, Low_Arrival_SoC",High_Session_Cost,0.3453,0.8483,2.2106
+"Fast_DC_Charging, Low_Arrival_SoC","High_Energy_Delivered, High_Session_Cost",0.3453,0.8483,2.2106
+"Fast_DC_Charging, High_Turnaround_Urgency",High_Session_Cost,0.3673,0.8463,2.2053
+"Fast_DC_Charging, High_Turnaround_Urgency","High_Energy_Delivered, High_Session_Cost",0.3673,0.8463,2.2053
+Fast_DC_Charging,High_Session_Cost,0.3728,0.8435,2.1981
+Fast_DC_Charging,"High_Energy_Delivered, High_Session_Cost",0.3728,0.8435,2.1981
+High_Ambient_Heat,"High_Session_Cost, High_Turnaround_Urgency",0.2098,0.8424,2.2551
+High_Ambient_Heat,"High_Energy_Delivered, High_Session_Cost, High_Turnaround_Urgency",0.2098,0.8424,2.2551
+"High_Ambient_Heat, Fast_DC_Charging","High_Energy_Delivered, Low_Arrival_SoC, High_Turnaround_Urgency",0.199,0.8413,2.3601
+High_Ambient_Heat,"High_Session_Cost, Fast_DC_Charging",0.2093,0.8404,2.2546
+High_Ambient_Heat,"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging",0.2093,0.8404,2.2546
+"High_Ambient_Heat, High_Turnaround_Urgency","High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC",0.199,0.84,2.3616
+High_Turnaround_Urgency,High_Session_Cost,0.3735,0.8377,2.183
+High_Turnaround_Urgency,"High_Energy_Delivered, High_Session_Cost",0.3735,0.8377,2.183
+High_Energy_Delivered,Low_Arrival_SoC,0.49,0.8371,1.5318
+"Fast_DC_Charging, Low_Arrival_SoC","High_Session_Cost, High_Turnaround_Urgency",0.3404,0.8364,2.239
+"Fast_DC_Charging, Low_Arrival_SoC","High_Energy_Delivered, High_Session_Cost, High_Turnaround_Urgency",0.3404,0.8364,2.239
+"Low_Arrival_SoC, High_Turnaround_Urgency","High_Session_Cost, Fast_DC_Charging",0.3404,0.8363,2.2435
+"Low_Arrival_SoC, High_Turnaround_Urgency","High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging",0.3404,0.8363,2.2435
+"High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency","High_Session_Cost, Low_Arrival_SoC",0.1943,0.8335,2.3532
+"High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency","High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC",0.1943,0.8335,2.3532
+"High_Ambient_Heat, High_Turnaround_Urgency","High_Session_Cost, Low_Arrival_SoC",0.1971,0.8318,2.3483
+"High_Ambient_Heat, High_Turnaround_Urgency","High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC",0.1971,0.8318,2.3483
+Fast_DC_Charging,"High_Session_Cost, High_Turnaround_Urgency",0.3673,0.8311,2.2248
+Fast_DC_Charging,"High_Energy_Delivered, High_Session_Cost, High_Turnaround_Urgency",0.3673,0.8311,2.2248
+"High_Ambient_Heat, Fast_DC_Charging","High_Session_Cost, Low_Arrival_SoC",0.1965,0.8307,2.3453
+"High_Ambient_Heat, Fast_DC_Charging","High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC",0.1965,0.8307,2.3453
+High_Ambient_Heat,"High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency",0.2067,0.8302,2.2605
+High_Ambient_Heat,"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency",0.2067,0.8302,2.2605
+"Full_100_Charge, Low_Arrival_SoC","High_Energy_Delivered, Long_Dwell_Duration",0.1281,0.8254,4.2546
+High_Turnaround_Urgency,"High_Session_Cost, Fast_DC_Charging",0.3673,0.8236,2.2096
+High_Turnaround_Urgency,"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging",0.3673,0.8236,2.2096
+High_Ambient_Heat,"High_Energy_Delivered, Low_Arrival_SoC",0.2046,0.8215,1.6764
+"High_Ambient_Heat, Fast_DC_Charging","High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency",0.1943,0.8212,2.3723
+"High_Ambient_Heat, Fast_DC_Charging","High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency",0.1943,0.8212,2.3723
+"High_Ambient_Heat, High_Turnaround_Urgency","High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC",0.1943,0.82,2.3746
+"High_Ambient_Heat, High_Turnaround_Urgency","High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC",0.1943,0.82,2.3746
+High_Ambient_Heat,"High_Energy_Delivered, Low_Arrival_SoC, High_Turnaround_Urgency",0.2019,0.8109,2.2749
+High_Ambient_Heat,"High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC",0.2015,0.8091,2.2746
+"Fast_DC_Charging, High_Turnaround_Urgency","High_Energy_Delivered, Low_Arrival_SoC",0.3504,0.8075,1.6477
+Fast_DC_Charging,"High_Energy_Delivered, Low_Arrival_SoC",0.3557,0.8049,1.6426
+High_Ambient_Heat,"High_Session_Cost, Low_Arrival_SoC",0.1994,0.8008,2.261
+High_Ambient_Heat,"High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC",0.1994,0.8008,2.261
+High_Turnaround_Urgency,"High_Energy_Delivered, Low_Arrival_SoC",0.3564,0.7994,1.6313
+High_Ambient_Heat,"High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",0.199,0.799,2.2804
+Fast_DC_Charging,"High_Energy_Delivered, Low_Arrival_SoC, High_Turnaround_Urgency",0.3504,0.7929,2.2245
+High_Ambient_Heat,"High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency",0.1971,0.7912,2.2857
+High_Ambient_Heat,"High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency",0.1971,0.7912,2.2857
+High_Ambient_Heat,"High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC",0.1965,0.789,2.285
+High_Ambient_Heat,"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC",0.1965,0.789,2.285
+High_Turnaround_Urgency,"High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC",0.3504,0.7858,2.2092
+"Fast_DC_Charging, High_Turnaround_Urgency","High_Session_Cost, Low_Arrival_SoC",0.3404,0.7845,2.215
+"Fast_DC_Charging, High_Turnaround_Urgency","High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC",0.3404,0.7845,2.215
+Fast_DC_Charging,"High_Session_Cost, Low_Arrival_SoC",0.3453,0.7814,2.2061
+Fast_DC_Charging,"High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC",0.3453,0.7814,2.2061
+High_Ambient_Heat,"High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",0.1943,0.78,2.291
+High_Ambient_Heat,"Low_Arrival_SoC, High_Energy_Delivered, Fast_DC_Charging, High_Turnaround_Urgency, High_Session_Cost",0.1943,0.78,2.291
+High_Turnaround_Urgency,"High_Session_Cost, Low_Arrival_SoC",0.3462,0.7763,2.1917
+High_Turnaround_Urgency,"High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC",0.3462,0.7763,2.1917
+Fast_DC_Charging,"High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency",0.3404,0.7704,2.2257
+Fast_DC_Charging,"High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency",0.3404,0.7704,2.2257
+High_Turnaround_Urgency,"High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC",0.3404,0.7635,2.2112
+High_Turnaround_Urgency,"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC",0.3404,0.7635,2.2112
+Low_Arrival_SoC,High_Turnaround_Urgency,0.4071,0.7449,1.6706
+Low_Arrival_SoC,Fast_DC_Charging,0.4071,0.7448,1.6855
+Low_Arrival_SoC,"Fast_DC_Charging, High_Turnaround_Urgency",0.4,0.7318,1.6865
+"High_Energy_Delivered, Low_Arrival_SoC",High_Turnaround_Urgency,0.3564,0.7274,1.6313
+"High_Energy_Delivered, Low_Arrival_SoC",Fast_DC_Charging,0.3557,0.7258,1.6426
+"High_Energy_Delivered, Low_Arrival_SoC",High_Session_Cost,0.3542,0.7228,1.8835
+"High_Energy_Delivered, Low_Arrival_SoC","Fast_DC_Charging, High_Turnaround_Urgency",0.3504,0.715,1.6477
+"High_Energy_Delivered, Low_Arrival_SoC","High_Session_Cost, High_Turnaround_Urgency",0.3462,0.7064,1.8909
+"High_Energy_Delivered, Low_Arrival_SoC","High_Session_Cost, Fast_DC_Charging",0.3453,0.7046,1.8903
+"High_Energy_Delivered, Low_Arrival_SoC","High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency",0.3404,0.6947,1.8917
+"High_Energy_Delivered, Full_100_Charge",Low_Arrival_SoC,0.1502,0.6909,1.2642
+Full_100_Charge,Low_Arrival_SoC,0.1552,0.6842,1.2519
+Full_100_Charge,"High_Energy_Delivered, Low_Arrival_SoC",0.1502,0.6621,1.3511
+Long_Dwell_Duration,"Full_100_Charge, Low_Arrival_SoC",0.1321,0.6605,4.2558
+Long_Dwell_Duration,Low_Arrival_SoC,0.1321,0.6605,1.2086
+"Full_100_Charge, Long_Dwell_Duration",Low_Arrival_SoC,0.1321,0.6605,1.2086
+"High_Energy_Delivered, Long_Dwell_Duration","Full_100_Charge, Low_Arrival_SoC",0.1281,0.6603,4.2546
+"High_Energy_Delivered, Long_Dwell_Duration",Low_Arrival_SoC,0.1281,0.6603,1.2083
+"High_Energy_Delivered, Full_100_Charge, Long_Dwell_Duration",Low_Arrival_SoC,0.1281,0.6603,1.2083
+High_Energy_Delivered,High_Turnaround_Urgency,0.3852,0.658,1.4757
+High_Energy_Delivered,Fast_DC_Charging,0.3846,0.6569,1.4865
+High_Energy_Delivered,High_Session_Cost,0.3837,0.6555,1.7082
+Low_Arrival_SoC,"High_Energy_Delivered, High_Turnaround_Urgency",0.3564,0.6522,1.6933
+Low_Arrival_SoC,"High_Energy_Delivered, Fast_DC_Charging",0.3557,0.6509,1.6925
+Low_Arrival_SoC,High_Session_Cost,0.3542,0.6481,1.6889
+Low_Arrival_SoC,"High_Energy_Delivered, High_Session_Cost",0.3542,0.6481,1.6889
+High_Energy_Delivered,"Fast_DC_Charging, High_Turnaround_Urgency",0.3785,0.6467,1.4902
+Low_Arrival_SoC,"High_Energy_Delivered, Fast_DC_Charging, High_Turnaround_Urgency",0.3504,0.6412,1.6938
+Long_Dwell_Duration,"High_Energy_Delivered, Full_100_Charge, Low_Arrival_SoC",0.1281,0.6405,4.2643
+Long_Dwell_Duration,"High_Energy_Delivered, Low_Arrival_SoC",0.1281,0.6405,1.307
+"Full_100_Charge, Long_Dwell_Duration","High_Energy_Delivered, Low_Arrival_SoC",0.1281,0.6405,1.307
+High_Energy_Delivered,"High_Session_Cost, High_Turnaround_Urgency",0.3735,0.6381,1.7082
+High_Energy_Delivered,"High_Session_Cost, Fast_DC_Charging",0.3728,0.6367,1.7082
+Low_Arrival_SoC,"High_Session_Cost, High_Turnaround_Urgency",0.3462,0.6334,1.6956
+Low_Arrival_SoC,"High_Energy_Delivered, High_Session_Cost, High_Turnaround_Urgency",0.3462,0.6334,1.6956
+Low_Arrival_SoC,"High_Session_Cost, Fast_DC_Charging",0.3453,0.6318,1.6951
+Low_Arrival_SoC,"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging",0.3453,0.6318,1.6951
+High_Energy_Delivered,"High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency",0.3673,0.6273,1.7082
+Low_Arrival_SoC,"High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency",0.3404,0.623,1.6963
+Low_Arrival_SoC,"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency",0.3404,0.623,1.6963
+High_Energy_Delivered,"Low_Arrival_SoC, High_Turnaround_Urgency",0.3564,0.6089,1.4957
+High_Energy_Delivered,"Fast_DC_Charging, Low_Arrival_SoC",0.3557,0.6076,1.4927
+High_Energy_Delivered,"High_Session_Cost, Low_Arrival_SoC",0.3542,0.6051,1.7082
+High_Energy_Delivered,"Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",0.3504,0.5986,1.4966
+High_Energy_Delivered,"High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency",0.3462,0.5913,1.7082
+High_Energy_Delivered,"High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC",0.3453,0.5899,1.7082
+"High_Energy_Delivered, Full_100_Charge","Low_Arrival_SoC, Long_Dwell_Duration",0.1281,0.5892,4.4605
+Full_100_Charge,"Low_Arrival_SoC, Long_Dwell_Duration",0.1321,0.5823,4.4082
+High_Energy_Delivered,"High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",0.3404,0.5816,1.7082
+"High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency","High_Energy_Delivered, High_Ambient_Heat",0.1943,0.5706,2.6137
+"High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",High_Ambient_Heat,0.1943,0.5706,2.291
+"Low_Arrival_SoC, High_Energy_Delivered, Fast_DC_Charging, High_Turnaround_Urgency, High_Session_Cost",High_Ambient_Heat,0.1943,0.5706,2.291
+"High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency","High_Energy_Delivered, High_Ambient_Heat",0.1971,0.5693,2.6077
+"High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency",High_Ambient_Heat,0.1971,0.5693,2.2857
+"High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency",High_Ambient_Heat,0.1971,0.5693,2.2857
+"High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC","High_Energy_Delivered, High_Ambient_Heat",0.1965,0.5691,2.6068
+"High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC",High_Ambient_Heat,0.1965,0.5691,2.285
+"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC",High_Ambient_Heat,0.1965,0.5691,2.285
+"High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",High_Ambient_Heat,0.199,0.5679,2.2804
+"High_Energy_Delivered, Low_Arrival_SoC, High_Turnaround_Urgency",High_Ambient_Heat,0.2019,0.5666,2.2749
+"High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC",High_Ambient_Heat,0.2015,0.5665,2.2746
+Full_100_Charge,"High_Energy_Delivered, Low_Arrival_SoC, Long_Dwell_Duration",0.1281,0.5647,4.4082
+"High_Session_Cost, Low_Arrival_SoC","High_Energy_Delivered, High_Ambient_Heat",0.1994,0.5631,2.5795
+"High_Session_Cost, Low_Arrival_SoC",High_Ambient_Heat,0.1994,0.5631,2.261
+"High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC",High_Ambient_Heat,0.1994,0.5631,2.261
+"High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency","High_Energy_Delivered, High_Ambient_Heat",0.2067,0.563,2.5789
+"High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency",High_Ambient_Heat,0.2067,0.563,2.2605
+"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency",High_Ambient_Heat,0.2067,0.563,2.2605
+"High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC","High_Energy_Delivered, High_Ambient_Heat, High_Turnaround_Urgency",0.1943,0.5626,2.6123
+"High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC","High_Ambient_Heat, High_Turnaround_Urgency",0.1943,0.5626,2.3746
+"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging, Low_Arrival_SoC","High_Ambient_Heat, High_Turnaround_Urgency",0.1943,0.5626,2.3746
+"High_Session_Cost, High_Turnaround_Urgency","High_Energy_Delivered, High_Ambient_Heat",0.2098,0.5616,2.5728
+"High_Session_Cost, High_Turnaround_Urgency",High_Ambient_Heat,0.2098,0.5616,2.2551
+"High_Energy_Delivered, High_Session_Cost, High_Turnaround_Urgency",High_Ambient_Heat,0.2098,0.5616,2.2551
+"High_Session_Cost, Fast_DC_Charging","High_Energy_Delivered, High_Ambient_Heat",0.2093,0.5615,2.5722
+"High_Session_Cost, Fast_DC_Charging",High_Ambient_Heat,0.2093,0.5615,2.2546
+"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging",High_Ambient_Heat,0.2093,0.5615,2.2546
+"High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency","High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging",0.1943,0.5612,2.6107
+"High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency","High_Ambient_Heat, Fast_DC_Charging",0.1943,0.5612,2.3723
+"High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC, High_Turnaround_Urgency","High_Ambient_Heat, Fast_DC_Charging",0.1943,0.5612,2.3723
+"High_Energy_Delivered, Fast_DC_Charging, High_Turnaround_Urgency",High_Ambient_Heat,0.2122,0.5604,2.2503
+"High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC","High_Ambient_Heat, High_Turnaround_Urgency",0.199,0.5595,2.3616
+"High_Energy_Delivered, High_Turnaround_Urgency",High_Ambient_Heat,0.2154,0.5591,2.2448
+"High_Energy_Delivered, Fast_DC_Charging",High_Ambient_Heat,0.215,0.559,2.2444
+"High_Energy_Delivered, Low_Arrival_SoC, High_Turnaround_Urgency","High_Ambient_Heat, Fast_DC_Charging",0.199,0.5583,2.3601
+"High_Session_Cost, Low_Arrival_SoC","High_Energy_Delivered, High_Ambient_Heat, High_Turnaround_Urgency",0.1971,0.5563,2.5833
+"High_Session_Cost, Low_Arrival_SoC","High_Ambient_Heat, High_Turnaround_Urgency",0.1971,0.5563,2.3483
+"High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC","High_Ambient_Heat, High_Turnaround_Urgency",0.1971,0.5563,2.3483
+"High_Session_Cost, Low_Arrival_SoC","High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging",0.1965,0.5548,2.5809
+"High_Session_Cost, Low_Arrival_SoC","High_Ambient_Heat, Fast_DC_Charging",0.1965,0.5548,2.3453
+"High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC","High_Ambient_Heat, Fast_DC_Charging",0.1965,0.5548,2.3453
+"High_Session_Cost, Fast_DC_Charging","High_Energy_Delivered, High_Ambient_Heat, High_Turnaround_Urgency",0.2067,0.5547,2.5756
+"High_Session_Cost, Fast_DC_Charging","High_Ambient_Heat, High_Turnaround_Urgency",0.2067,0.5547,2.3413
+"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging","High_Ambient_Heat, High_Turnaround_Urgency",0.2067,0.5547,2.3413
+"High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency","High_Session_Cost, High_Ambient_Heat",0.1943,0.5544,2.6088
+High_Session_Cost,"High_Energy_Delivered, High_Ambient_Heat",0.2125,0.5537,2.5366
+High_Session_Cost,High_Ambient_Heat,0.2125,0.5537,2.2234
+"High_Energy_Delivered, High_Session_Cost",High_Ambient_Heat,0.2125,0.5537,2.2234
+"High_Session_Cost, High_Turnaround_Urgency","High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging",0.2067,0.5535,2.5749
+"High_Session_Cost, High_Turnaround_Urgency","High_Ambient_Heat, Fast_DC_Charging",0.2067,0.5535,2.3398
+"High_Energy_Delivered, High_Session_Cost, High_Turnaround_Urgency","High_Ambient_Heat, Fast_DC_Charging",0.2067,0.5535,2.3398
+"High_Energy_Delivered, Low_Arrival_SoC, High_Turnaround_Urgency","High_Session_Cost, High_Ambient_Heat",0.1971,0.5528,2.6015
+"High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC","High_Session_Cost, High_Ambient_Heat",0.1965,0.5524,2.5997
+"High_Energy_Delivered, Fast_DC_Charging","High_Ambient_Heat, High_Turnaround_Urgency",0.2122,0.5517,2.3288
+"High_Energy_Delivered, High_Turnaround_Urgency","High_Ambient_Heat, Fast_DC_Charging",0.2122,0.5508,2.3283
+"High_Session_Cost, Low_Arrival_SoC","High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency",0.1943,0.5484,2.5851
+"High_Session_Cost, Low_Arrival_SoC","High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency",0.1943,0.5484,2.3532
+"High_Energy_Delivered, High_Session_Cost, Low_Arrival_SoC","High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency",0.1943,0.5484,2.3532
+High_Session_Cost,"High_Energy_Delivered, High_Ambient_Heat, High_Turnaround_Urgency",0.2098,0.5467,2.5387
+High_Session_Cost,"High_Ambient_Heat, High_Turnaround_Urgency",0.2098,0.5467,2.3078
+"High_Energy_Delivered, High_Session_Cost","High_Ambient_Heat, High_Turnaround_Urgency",0.2098,0.5467,2.3078
+"High_Energy_Delivered, Fast_DC_Charging, High_Turnaround_Urgency","High_Session_Cost, High_Ambient_Heat",0.2067,0.5462,2.5702
+"High_Energy_Delivered, Fast_DC_Charging, Low_Arrival_SoC","High_Session_Cost, High_Ambient_Heat, High_Turnaround_Urgency",0.1943,0.5461,2.603
+High_Session_Cost,"High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging",0.2093,0.5454,2.5374
+High_Session_Cost,"High_Ambient_Heat, Fast_DC_Charging",0.2093,0.5454,2.3057
+"High_Energy_Delivered, High_Session_Cost","High_Ambient_Heat, Fast_DC_Charging",0.2093,0.5454,2.3057
+"High_Energy_Delivered, Low_Arrival_SoC, High_Turnaround_Urgency","High_Session_Cost, High_Ambient_Heat, Fast_DC_Charging",0.1943,0.545,2.6037
+"High_Energy_Delivered, High_Turnaround_Urgency","High_Ambient_Heat, High_Session_Cost",0.2098,0.5447,2.5631
+"High_Energy_Delivered, Fast_DC_Charging","High_Ambient_Heat, High_Session_Cost",0.2093,0.5443,2.5613
+"Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",High_Ambient_Heat,0.2177,0.5443,2.1856
+"Low_Arrival_SoC, High_Turnaround_Urgency",High_Ambient_Heat,0.2213,0.5435,2.1822
+"Fast_DC_Charging, Low_Arrival_SoC",High_Ambient_Heat,0.2208,0.5426,2.1785
+High_Session_Cost,"High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency",0.2067,0.5388,2.5395
+High_Session_Cost,"High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency",0.2067,0.5388,2.3118
+"High_Energy_Delivered, High_Session_Cost","High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency",0.2067,0.5388,2.3118
+"High_Energy_Delivered, Fast_DC_Charging","High_Session_Cost, High_Ambient_Heat, High_Turnaround_Urgency",0.2067,0.5376,2.5626
+"Fast_DC_Charging, High_Turnaround_Urgency",High_Ambient_Heat,0.2331,0.537,2.1564
+"High_Energy_Delivered, High_Turnaround_Urgency","High_Session_Cost, High_Ambient_Heat, Fast_DC_Charging",0.2067,0.5367,2.5644
+Fast_DC_Charging,High_Ambient_Heat,0.2366,0.5353,2.1494
+"Low_Arrival_SoC, High_Turnaround_Urgency","High_Ambient_Heat, Fast_DC_Charging",0.2177,0.5348,2.2607
+"Fast_DC_Charging, Low_Arrival_SoC","High_Ambient_Heat, High_Turnaround_Urgency",0.2177,0.5348,2.2576
+High_Turnaround_Urgency,High_Ambient_Heat,0.2369,0.5313,2.1332
+"High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency","High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC",0.1943,0.5289,2.5852
+"High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency","High_Ambient_Heat, Low_Arrival_SoC",0.1943,0.5289,2.3555
+"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging, High_Turnaround_Urgency","High_Ambient_Heat, Low_Arrival_SoC",0.1943,0.5289,2.3555
+"High_Session_Cost, High_Turnaround_Urgency","High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC",0.1971,0.5275,2.5782
+"High_Session_Cost, High_Turnaround_Urgency","High_Ambient_Heat, Low_Arrival_SoC",0.1971,0.5275,2.3492
+"High_Energy_Delivered, High_Session_Cost, High_Turnaround_Urgency","High_Ambient_Heat, Low_Arrival_SoC",0.1971,0.5275,2.3492
+Fast_DC_Charging,"High_Ambient_Heat, High_Turnaround_Urgency",0.2331,0.5274,2.2262
+"High_Session_Cost, Fast_DC_Charging","High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC",0.1965,0.5272,2.5766
+"High_Session_Cost, Fast_DC_Charging","High_Ambient_Heat, Low_Arrival_SoC",0.1965,0.5272,2.3476
+"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging","High_Ambient_Heat, Low_Arrival_SoC",0.1965,0.5272,2.3476
+"High_Energy_Delivered, Fast_DC_Charging, High_Turnaround_Urgency","High_Ambient_Heat, Low_Arrival_SoC",0.199,0.5257,2.3411
+"High_Energy_Delivered, High_Turnaround_Urgency","High_Ambient_Heat, Low_Arrival_SoC",0.2019,0.5243,2.3348
+"High_Energy_Delivered, Fast_DC_Charging","High_Ambient_Heat, Low_Arrival_SoC",0.2015,0.524,2.3335
+High_Turnaround_Urgency,"High_Ambient_Heat, Fast_DC_Charging",0.2331,0.5227,2.2095
+"High_Session_Cost, Fast_DC_Charging","High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency",0.1943,0.5211,2.5805
+"High_Session_Cost, Fast_DC_Charging","High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency",0.1943,0.5211,2.3554
+"High_Energy_Delivered, High_Session_Cost, Fast_DC_Charging","High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency",0.1943,0.5211,2.3554
+"High_Session_Cost, High_Turnaround_Urgency","High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC",0.1943,0.52,2.5807
+"High_Session_Cost, High_Turnaround_Urgency","High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC",0.1943,0.52,2.3546
+"High_Energy_Delivered, High_Session_Cost, High_Turnaround_Urgency","High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC",0.1943,0.52,2.3546
+High_Session_Cost,"High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC",0.1994,0.5197,2.5403
+High_Session_Cost,"High_Ambient_Heat, Low_Arrival_SoC",0.1994,0.5197,2.3146
+"High_Energy_Delivered, High_Session_Cost","High_Ambient_Heat, Low_Arrival_SoC",0.1994,0.5197,2.3146
+"High_Energy_Delivered, Fast_DC_Charging","High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency",0.199,0.5175,2.3389
+"High_Energy_Delivered, High_Turnaround_Urgency","High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC",0.199,0.5166,2.3392
+High_Session_Cost,"High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency",0.1971,0.5135,2.5426
+High_Session_Cost,"High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency",0.1971,0.5135,2.3208
+"High_Energy_Delivered, High_Session_Cost","High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency",0.1971,0.5135,2.3208
+"High_Energy_Delivered, Fast_DC_Charging, High_Turnaround_Urgency","High_Session_Cost, High_Ambient_Heat, Low_Arrival_SoC",0.1943,0.5131,2.5728
+High_Session_Cost,"High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC",0.1965,0.5121,2.5412
+High_Session_Cost,"High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC",0.1965,0.5121,2.3186
+"High_Energy_Delivered, High_Session_Cost","High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC",0.1965,0.5121,2.3186
+"High_Energy_Delivered, High_Turnaround_Urgency","High_Session_Cost, High_Ambient_Heat, Low_Arrival_SoC",0.1971,0.5116,2.5648
+"High_Energy_Delivered, Fast_DC_Charging","High_Session_Cost, High_Ambient_Heat, Low_Arrival_SoC",0.1965,0.511,2.562
+High_Session_Cost,"High_Ambient_Heat, Low_Arrival_SoC, High_Energy_Delivered, Fast_DC_Charging, High_Turnaround_Urgency",0.1943,0.5062,2.5437
+High_Session_Cost,"High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",0.1943,0.5062,2.3252
+"High_Energy_Delivered, High_Session_Cost","High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency",0.1943,0.5062,2.3252
+"High_Energy_Delivered, Fast_DC_Charging","High_Session_Cost, High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency",0.1943,0.5051,2.5635
+"High_Energy_Delivered, High_Turnaround_Urgency","High_Session_Cost, High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC",0.1943,0.5043,2.5663
+"Fast_DC_Charging, High_Turnaround_Urgency","High_Ambient_Heat, Low_Arrival_SoC",0.2177,0.5017,2.2341
+Fast_DC_Charging,"High_Ambient_Heat, Low_Arrival_SoC",0.2208,0.4998,2.2257
+"Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency","High_Energy_Delivered, High_Ambient_Heat",0.199,0.4976,2.2793
+High_Turnaround_Urgency,"High_Ambient_Heat, Low_Arrival_SoC",0.2213,0.4962,2.2097
+"Low_Arrival_SoC, High_Turnaround_Urgency","High_Energy_Delivered, High_Ambient_Heat",0.2019,0.4961,2.2724
+"Fast_DC_Charging, Low_Arrival_SoC","High_Energy_Delivered, High_Ambient_Heat",0.2015,0.495,2.2676
+Fast_DC_Charging,"High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency",0.2177,0.4926,2.2266
+"Fast_DC_Charging, Low_Arrival_SoC","High_Energy_Delivered, High_Ambient_Heat, High_Turnaround_Urgency",0.199,0.4889,2.2702
+"Fast_DC_Charging, High_Turnaround_Urgency","High_Energy_Delivered, High_Ambient_Heat",0.2122,0.4889,2.2395
+"Low_Arrival_SoC, High_Turnaround_Urgency","High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging",0.199,0.4888,2.2741
+High_Turnaround_Urgency,"High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC",0.2177,0.4882,2.2107
+Fast_DC_Charging,"High_Energy_Delivered, High_Ambient_Heat",0.215,0.4864,2.2282
+"Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency","High_Session_Cost, High_Ambient_Heat",0.1943,0.4857,2.2856
+"Fast_DC_Charging, Low_Arrival_SoC, High_Turnaround_Urgency","High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat",0.1943,0.4857,2.2856
+"Low_Arrival_SoC, High_Turnaround_Urgency","High_Ambient_Heat, High_Session_Cost",0.1971,0.484,2.2778
+"Low_Arrival_SoC, High_Turnaround_Urgency","High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat",0.1971,0.484,2.2778
+High_Turnaround_Urgency,"High_Energy_Delivered, High_Ambient_Heat",0.2154,0.483,2.2123
+"Fast_DC_Charging, Low_Arrival_SoC","High_Ambient_Heat, High_Session_Cost",0.1965,0.4827,2.2717
+"Fast_DC_Charging, Low_Arrival_SoC","High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat",0.1965,0.4827,2.2717
+Fast_DC_Charging,"High_Energy_Delivered, High_Ambient_Heat, High_Turnaround_Urgency",0.2122,0.4801,2.2293
+"Low_Arrival_SoC, High_Turnaround_Urgency","High_Session_Cost, High_Ambient_Heat, Fast_DC_Charging",0.1943,0.4772,2.2798
+"Low_Arrival_SoC, High_Turnaround_Urgency","High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging",0.1943,0.4772,2.2798
+"Fast_DC_Charging, Low_Arrival_SoC","High_Session_Cost, High_Ambient_Heat, High_Turnaround_Urgency",0.1943,0.4772,2.2746
+"Fast_DC_Charging, Low_Arrival_SoC","High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat, High_Turnaround_Urgency",0.1943,0.4772,2.2746
+"Fast_DC_Charging, High_Turnaround_Urgency","High_Ambient_Heat, High_Session_Cost",0.2067,0.4764,2.2421
+"Fast_DC_Charging, High_Turnaround_Urgency","High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat",0.2067,0.4764,2.2421
+High_Turnaround_Urgency,"High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging",0.2122,0.4758,2.2134
+Fast_DC_Charging,"High_Ambient_Heat, High_Session_Cost",0.2093,0.4736,2.2289
+Fast_DC_Charging,"High_Energy_Delivered, High_Session_Cost, High_Ambient_Heat",0.2093,0.4736,2.2289
+High_Turnaround_Urgency,"High_Ambient_Heat, High_Session_Cost",0.2098,0.4705,2.2142
+High_Turnaround_Urgency,"High_Energy_Delivered, High_Session_Cost, High_Ambient_Heat",0.2098,0.4705,2.2142
+Fast_DC_Charging,"High_Ambient_Heat, High_Session_Cost, High_Turnaround_Urgency",0.2067,0.4679,2.2301
+Fast_DC_Charging,"High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat, High_Turnaround_Urgency",0.2067,0.4679,2.2301
+High_Turnaround_Urgency,"High_Ambient_Heat, High_Session_Cost, Fast_DC_Charging",0.2067,0.4637,2.2153
+High_Turnaround_Urgency,"High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging",0.2067,0.4637,2.2153
+"Fast_DC_Charging, High_Turnaround_Urgency","High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC",0.199,0.4586,2.2413
+Fast_DC_Charging,"High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC",0.2015,0.456,2.2287
+High_Turnaround_Urgency,"High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC",0.2019,0.4529,2.2136
+Fast_DC_Charging,"High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency",0.199,0.4503,2.2299
+"Fast_DC_Charging, High_Turnaround_Urgency","High_Session_Cost, High_Ambient_Heat, Low_Arrival_SoC",0.1943,0.4476,2.2443
+"Fast_DC_Charging, High_Turnaround_Urgency","High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC",0.1943,0.4476,2.2443
+High_Turnaround_Urgency,"High_Energy_Delivered, High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC",0.199,0.4463,2.2148
+Fast_DC_Charging,"High_Ambient_Heat, High_Session_Cost, Low_Arrival_SoC",0.1965,0.4447,2.2295
+Fast_DC_Charging,"High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC",0.1965,0.4447,2.2295
+High_Turnaround_Urgency,"High_Ambient_Heat, High_Session_Cost, Low_Arrival_SoC",0.1971,0.4419,2.2157
+High_Turnaround_Urgency,"High_Session_Cost, High_Energy_Delivered, High_Ambient_Heat, Low_Arrival_SoC",0.1971,0.4419,2.2157
+Fast_DC_Charging,"High_Session_Cost, High_Ambient_Heat, Low_Arrival_SoC, High_Turnaround_Urgency",0.1943,0.4396,2.2308
+Fast_DC_Charging,"High_Ambient_Heat, Low_Arrival_SoC, High_Energy_Delivered, High_Turnaround_Urgency, High_Session_Cost",0.1943,0.4396,2.2308
+High_Turnaround_Urgency,"High_Session_Cost, High_Ambient_Heat, Fast_DC_Charging, Low_Arrival_SoC",0.1943,0.4356,2.217
+High_Turnaround_Urgency,"High_Ambient_Heat, Low_Arrival_SoC, High_Energy_Delivered, Fast_DC_Charging, High_Session_Cost",0.1943,0.4356,2.217
+"High_Energy_Delivered, Low_Arrival_SoC",High_Ambient_Heat,0.2046,0.4175,1.6764
+"High_Energy_Delivered, Low_Arrival_SoC","High_Ambient_Heat, High_Turnaround_Urgency",0.2019,0.4121,1.7396
+"High_Energy_Delivered, Low_Arrival_SoC","High_Ambient_Heat, Fast_DC_Charging",0.2015,0.4112,1.7382
+Low_Arrival_SoC,High_Ambient_Heat,0.2245,0.4109,1.6498
+"High_Energy_Delivered, Low_Arrival_SoC","High_Ambient_Heat, High_Session_Cost",0.1994,0.407,1.9153
+"High_Energy_Delivered, Low_Arrival_SoC","High_Ambient_Heat, Fast_DC_Charging, High_Turnaround_Urgency",0.199,0.4061,1.7425
+Low_Arrival_SoC,"High_Ambient_Heat, High_Turnaround_Urgency",0.2213,0.4048,1.7089
+Low_Arrival_SoC,"High_Ambient_Heat, Fast_DC_Charging",0.2208,0.4041,1.7084
+"High_Energy_Delivered, Low_Arrival_SoC","High_Session_Cost, High_Ambient_Heat, High_Turnaround_Urgency",0.1971,0.4021,1.9166
+"High_Energy_Delivered, Low_Arrival_SoC","High_Session_Cost, High_Ambient_Heat, Fast_DC_Charging",0.1965,0.401,1.9158

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="950" viewBox="0 0 1200 950" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1200" height="950" fill="#FAFAFA"/>
+<text x="600.0" y="26" text-anchor="middle" font-size="18px" font-weight="bold" fill="#1A237E">Star Schema: Smart EV Charging Operational Platform (Fact_Charging_Sessions)</text>
+<path d="M 591.0 236 L 613.0 360" fill="none" stroke="#37474F" stroke-width="1.5" stroke-dasharray="none"/>
+<text x="602.0" y="293.0" text-anchor="middle" font-size="11px" fill="#37474F" font-style="italic">occurs on</text>
+<path d="M 276 186.0 L 460 420" fill="none" stroke="#37474F" stroke-width="1.5" stroke-dasharray="none"/>
+<text x="368.0" y="298.0" text-anchor="middle" font-size="11px" fill="#37474F" font-style="italic">initiated by</text>
+<path d="M 282 603.0 L 460 560" fill="none" stroke="#37474F" stroke-width="1.5" stroke-dasharray="none"/>
+<text x="371.0" y="576.5" text-anchor="middle" font-size="11px" fill="#37474F" font-style="italic">charges</text>
+<path d="M 850 203.0 L 766 420" fill="none" stroke="#37474F" stroke-width="1.5" stroke-dasharray="none"/>
+<text x="808.0" y="306.5" text-anchor="middle" font-size="11px" fill="#37474F" font-style="italic">plugged at</text>
+<path d="M 850 586.0 L 766 560" fill="none" stroke="#37474F" stroke-width="1.5" stroke-dasharray="none"/>
+<text x="808.0" y="568.0" text-anchor="middle" font-size="11px" fill="#37474F" font-style="italic">billed under</text>
+<g>
+<rect x="460" y="360" width="306" height="36" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5" rx="3"/>
+<text x="613.0" y="383.0" text-anchor="middle" font-size="14px" font-weight="bold" fill="#0D47A1">Fact_Charging_Sessions</text>
+<rect x="460" y="396" width="306" height="34" fill="#FFFFFF" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="520" y1="396" x2="520" y2="430" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="726" y1="396" x2="726" y2="430" stroke="#2E7D32" stroke-width="0.8"/>
+<text x="468" y="417.0" font-size="12px" fill="#546E7A">int</text>
+<text x="528" y="417.0" font-size="12px" font-weight="500" fill="#263238">session_id</text>
+<text x="734" y="417.0" font-size="11px" font-weight="bold" fill="#C62828">PK</text>
+<rect x="460" y="430" width="306" height="34" fill="#F8FAFC" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="520" y1="430" x2="520" y2="464" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="726" y1="430" x2="726" y2="464" stroke="#2E7D32" stroke-width="0.8"/>
+<text x="468" y="451.0" font-size="12px" fill="#546E7A">int</text>
+<text x="528" y="451.0" font-size="12px" font-weight="500" fill="#263238">driver_id</text>
+<text x="734" y="451.0" font-size="11px" font-weight="bold" fill="#1565C0">FK</text>
+<rect x="460" y="464" width="306" height="34" fill="#FFFFFF" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="520" y1="464" x2="520" y2="498" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="726" y1="464" x2="726" y2="498" stroke="#2E7D32" stroke-width="0.8"/>
+<text x="468" y="485.0" font-size="12px" fill="#546E7A">int</text>
+<text x="528" y="485.0" font-size="12px" font-weight="500" fill="#263238">vehicle_id</text>
+<text x="734" y="485.0" font-size="11px" font-weight="bold" fill="#1565C0">FK</text>
+<rect x="460" y="498" width="306" height="34" fill="#F8FAFC" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="520" y1="498" x2="520" y2="532" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="726" y1="498" x2="726" y2="532" stroke="#2E7D32" stroke-width="0.8"/>
+<text x="468" y="519.0" font-size="12px" fill="#546E7A">int</text>
+<text x="528" y="519.0" font-size="12px" font-weight="500" fill="#263238">station_id</text>
+<text x="734" y="519.0" font-size="11px" font-weight="bold" fill="#1565C0">FK</text>
+<rect x="460" y="532" width="306" height="34" fill="#FFFFFF" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="520" y1="532" x2="520" y2="566" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="726" y1="532" x2="726" y2="566" stroke="#2E7D32" stroke-width="0.8"/>
+<text x="468" y="553.0" font-size="12px" fill="#546E7A">int</text>
+<text x="528" y="553.0" font-size="12px" font-weight="500" fill="#263238">tariff_id</text>
+<text x="734" y="553.0" font-size="11px" font-weight="bold" fill="#1565C0">FK</text>
+<rect x="460" y="566" width="306" height="34" fill="#F8FAFC" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="520" y1="566" x2="520" y2="600" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="726" y1="566" x2="726" y2="600" stroke="#2E7D32" stroke-width="0.8"/>
+<text x="468" y="587.0" font-size="12px" fill="#546E7A">int</text>
+<text x="528" y="587.0" font-size="12px" font-weight="500" fill="#263238">date_id</text>
+<text x="734" y="587.0" font-size="11px" font-weight="bold" fill="#1565C0">FK</text>
+<rect x="460" y="600" width="306" height="34" fill="#FFFFFF" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="520" y1="600" x2="520" y2="634" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="726" y1="600" x2="726" y2="634" stroke="#2E7D32" stroke-width="0.8"/>
+<text x="468" y="621.0" font-size="12px" fill="#546E7A">float</text>
+<text x="528" y="621.0" font-size="12px" font-weight="500" fill="#263238">energy_consumed_kwh</text>
+<text x="734" y="621.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="460" y="634" width="306" height="34" fill="#F8FAFC" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="520" y1="634" x2="520" y2="668" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="726" y1="634" x2="726" y2="668" stroke="#2E7D32" stroke-width="0.8"/>
+<text x="468" y="655.0" font-size="12px" fill="#546E7A">int</text>
+<text x="528" y="655.0" font-size="12px" font-weight="500" fill="#263238">charging_duration_min</text>
+<text x="734" y="655.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="460" y="668" width="306" height="34" fill="#FFFFFF" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="520" y1="668" x2="520" y2="702" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="726" y1="668" x2="726" y2="702" stroke="#2E7D32" stroke-width="0.8"/>
+<text x="468" y="689.0" font-size="12px" fill="#546E7A">float</text>
+<text x="528" y="689.0" font-size="12px" font-weight="500" fill="#263238">initial_soc_pct</text>
+<text x="734" y="689.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="460" y="702" width="306" height="34" fill="#F8FAFC" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="520" y1="702" x2="520" y2="736" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="726" y1="702" x2="726" y2="736" stroke="#2E7D32" stroke-width="0.8"/>
+<text x="468" y="723.0" font-size="12px" fill="#546E7A">float</text>
+<text x="528" y="723.0" font-size="12px" font-weight="500" fill="#263238">final_soc_pct</text>
+<text x="734" y="723.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="460" y="736" width="306" height="34" fill="#FFFFFF" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="520" y1="736" x2="520" y2="770" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="726" y1="736" x2="726" y2="770" stroke="#2E7D32" stroke-width="0.8"/>
+<text x="468" y="757.0" font-size="12px" fill="#546E7A">float</text>
+<text x="528" y="757.0" font-size="12px" font-weight="500" fill="#263238">charging_cost_inr</text>
+<text x="734" y="757.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="460" y="770" width="306" height="34" fill="#F8FAFC" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="520" y1="770" x2="520" y2="804" stroke="#2E7D32" stroke-width="0.8"/>
+<line x1="726" y1="770" x2="726" y2="804" stroke="#2E7D32" stroke-width="0.8"/>
+<text x="468" y="791.0" font-size="12px" fill="#546E7A">float</text>
+<text x="528" y="791.0" font-size="12px" font-weight="500" fill="#263238">peak_power_kw</text>
+<text x="734" y="791.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+</g>
+<g>
+<rect x="470" y="30" width="242" height="36" fill="#FFF3E0" stroke="#EF6C00" stroke-width="1.5" rx="3"/>
+<text x="591.0" y="53.0" text-anchor="middle" font-size="14px" font-weight="bold" fill="#0D47A1">Dim_Time_Date</text>
+<rect x="470" y="66" width="242" height="34" fill="#FFFFFF" stroke="#EF6C00" stroke-width="0.8"/>
+<line x1="530" y1="66" x2="530" y2="100" stroke="#EF6C00" stroke-width="0.8"/>
+<line x1="672" y1="66" x2="672" y2="100" stroke="#EF6C00" stroke-width="0.8"/>
+<text x="478" y="87.0" font-size="12px" fill="#546E7A">int</text>
+<text x="538" y="87.0" font-size="12px" font-weight="500" fill="#263238">date_id</text>
+<text x="680" y="87.0" font-size="11px" font-weight="bold" fill="#C62828">PK</text>
+<rect x="470" y="100" width="242" height="34" fill="#F8FAFC" stroke="#EF6C00" stroke-width="0.8"/>
+<line x1="530" y1="100" x2="530" y2="134" stroke="#EF6C00" stroke-width="0.8"/>
+<line x1="672" y1="100" x2="672" y2="134" stroke="#EF6C00" stroke-width="0.8"/>
+<text x="478" y="121.0" font-size="12px" fill="#546E7A">date</text>
+<text x="538" y="121.0" font-size="12px" font-weight="500" fill="#263238">full_date</text>
+<text x="680" y="121.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="470" y="134" width="242" height="34" fill="#FFFFFF" stroke="#EF6C00" stroke-width="0.8"/>
+<line x1="530" y1="134" x2="530" y2="168" stroke="#EF6C00" stroke-width="0.8"/>
+<line x1="672" y1="134" x2="672" y2="168" stroke="#EF6C00" stroke-width="0.8"/>
+<text x="478" y="155.0" font-size="12px" fill="#546E7A">int</text>
+<text x="538" y="155.0" font-size="12px" font-weight="500" fill="#263238">hour_of_day</text>
+<text x="680" y="155.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="470" y="168" width="242" height="34" fill="#F8FAFC" stroke="#EF6C00" stroke-width="0.8"/>
+<line x1="530" y1="168" x2="530" y2="202" stroke="#EF6C00" stroke-width="0.8"/>
+<line x1="672" y1="168" x2="672" y2="202" stroke="#EF6C00" stroke-width="0.8"/>
+<text x="478" y="189.0" font-size="12px" fill="#546E7A">string</text>
+<text x="538" y="189.0" font-size="12px" font-weight="500" fill="#263238">day_of_week</text>
+<text x="680" y="189.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="470" y="202" width="242" height="34" fill="#FFFFFF" stroke="#EF6C00" stroke-width="0.8"/>
+<line x1="530" y1="202" x2="530" y2="236" stroke="#EF6C00" stroke-width="0.8"/>
+<line x1="672" y1="202" x2="672" y2="236" stroke="#EF6C00" stroke-width="0.8"/>
+<text x="478" y="223.0" font-size="12px" fill="#546E7A">bool</text>
+<text x="538" y="223.0" font-size="12px" font-weight="500" fill="#263238">peak_hour_flag</text>
+<text x="680" y="223.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+</g> <g>
+<rect x="50" y="100" width="226" height="36" fill="#EDE7F6" stroke="#512DA8" stroke-width="1.5" rx="3"/>
+<text x="163.0" y="123.0" text-anchor="middle" font-size="14px" font-weight="bold" fill="#0D47A1">Dim_Driver</text>
+<rect x="50" y="136" width="226" height="34" fill="#FFFFFF" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="110" y1="136" x2="110" y2="170" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="236" y1="136" x2="236" y2="170" stroke="#512DA8" stroke-width="0.8"/>
+<text x="58" y="157.0" font-size="12px" fill="#546E7A">int</text>
+<text x="118" y="157.0" font-size="12px" font-weight="500" fill="#263238">driver_id</text>
+<text x="244" y="157.0" font-size="11px" font-weight="bold" fill="#C62828">PK</text>
+<rect x="50" y="170" width="226" height="34" fill="#F8FAFC" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="110" y1="170" x2="110" y2="204" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="236" y1="170" x2="236" y2="204" stroke="#512DA8" stroke-width="0.8"/>
+<text x="58" y="191.0" font-size="12px" fill="#546E7A">string</text>
+<text x="118" y="191.0" font-size="12px" font-weight="500" fill="#263238">driver_name</text>
+<text x="244" y="191.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="50" y="204" width="226" height="34" fill="#FFFFFF" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="110" y1="204" x2="110" y2="238" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="236" y1="204" x2="236" y2="238" stroke="#512DA8" stroke-width="0.8"/>
+<text x="58" y="225.0" font-size="12px" fill="#546E7A">string</text>
+<text x="118" y="225.0" font-size="12px" font-weight="500" fill="#263238">driver_type</text>
+<text x="244" y="225.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="50" y="238" width="226" height="34" fill="#F8FAFC" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="110" y1="238" x2="110" y2="272" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="236" y1="238" x2="236" y2="272" stroke="#512DA8" stroke-width="0.8"/>
+<text x="58" y="259.0" font-size="12px" fill="#546E7A">string</text>
+<text x="118" y="259.0" font-size="12px" font-weight="500" fill="#263238">loyalty_tier</text>
+<text x="244" y="259.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+</g> <g>
+<rect x="40" y="500" width="242" height="36" fill="#EDE7F6" stroke="#512DA8" stroke-width="1.5" rx="3"/>
+<text x="161.0" y="523.0" text-anchor="middle" font-size="14px" font-weight="bold" fill="#0D47A1">Dim_EV_Vehicle</text>
+<rect x="40" y="536" width="242" height="34" fill="#FFFFFF" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="100" y1="536" x2="100" y2="570" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="242" y1="536" x2="242" y2="570" stroke="#512DA8" stroke-width="0.8"/>
+<text x="48" y="557.0" font-size="12px" fill="#546E7A">int</text>
+<text x="108" y="557.0" font-size="12px" font-weight="500" fill="#263238">vehicle_id</text>
+<text x="250" y="557.0" font-size="11px" font-weight="bold" fill="#C62828">PK</text>
+<rect x="40" y="570" width="242" height="34" fill="#F8FAFC" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="100" y1="570" x2="100" y2="604" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="242" y1="570" x2="242" y2="604" stroke="#512DA8" stroke-width="0.8"/>
+<text x="48" y="591.0" font-size="12px" fill="#546E7A">string</text>
+<text x="108" y="591.0" font-size="12px" font-weight="500" fill="#263238">oem_brand</text>
+<text x="250" y="591.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="40" y="604" width="242" height="34" fill="#FFFFFF" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="100" y1="604" x2="100" y2="638" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="242" y1="604" x2="242" y2="638" stroke="#512DA8" stroke-width="0.8"/>
+<text x="48" y="625.0" font-size="12px" fill="#546E7A">string</text>
+<text x="108" y="625.0" font-size="12px" font-weight="500" fill="#263238">model_name</text>
+<text x="250" y="625.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="40" y="638" width="242" height="34" fill="#F8FAFC" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="100" y1="638" x2="100" y2="672" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="242" y1="638" x2="242" y2="672" stroke="#512DA8" stroke-width="0.8"/>
+<text x="48" y="659.0" font-size="12px" fill="#546E7A">float</text>
+<text x="108" y="659.0" font-size="12px" font-weight="500" fill="#263238">battery_kwh</text>
+<text x="250" y="659.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="40" y="672" width="242" height="34" fill="#FFFFFF" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="100" y1="672" x2="100" y2="706" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="242" y1="672" x2="242" y2="706" stroke="#512DA8" stroke-width="0.8"/>
+<text x="48" y="693.0" font-size="12px" fill="#546E7A">string</text>
+<text x="108" y="693.0" font-size="12px" font-weight="500" fill="#263238">chemistry</text>
+<text x="250" y="693.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+</g> <g>
+<rect x="850" y="100" width="226" height="36" fill="#EDE7F6" stroke="#512DA8" stroke-width="1.5" rx="3"/>
+<text x="963.0" y="123.0" text-anchor="middle" font-size="14px" font-weight="bold" fill="#0D47A1">Dim_Station</text>
+<rect x="850" y="136" width="226" height="34" fill="#FFFFFF" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="910" y1="136" x2="910" y2="170" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="1036" y1="136" x2="1036" y2="170" stroke="#512DA8" stroke-width="0.8"/>
+<text x="858" y="157.0" font-size="12px" fill="#546E7A">int</text>
+<text x="918" y="157.0" font-size="12px" font-weight="500" fill="#263238">station_id</text>
+<text x="1044" y="157.0" font-size="11px" font-weight="bold" fill="#C62828">PK</text>
+<rect x="850" y="170" width="226" height="34" fill="#F8FAFC" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="910" y1="170" x2="910" y2="204" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="1036" y1="170" x2="1036" y2="204" stroke="#512DA8" stroke-width="0.8"/>
+<text x="858" y="191.0" font-size="12px" fill="#546E7A">string</text>
+<text x="918" y="191.0" font-size="12px" font-weight="500" fill="#263238">station_name</text>
+<text x="1044" y="191.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="850" y="204" width="226" height="34" fill="#FFFFFF" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="910" y1="204" x2="910" y2="238" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="1036" y1="204" x2="1036" y2="238" stroke="#512DA8" stroke-width="0.8"/>
+<text x="858" y="225.0" font-size="12px" fill="#546E7A">string</text>
+<text x="918" y="225.0" font-size="12px" font-weight="500" fill="#263238">charger_type</text>
+<text x="1044" y="225.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="850" y="238" width="226" height="34" fill="#F8FAFC" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="910" y1="238" x2="910" y2="272" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="1036" y1="238" x2="1036" y2="272" stroke="#512DA8" stroke-width="0.8"/>
+<text x="858" y="259.0" font-size="12px" fill="#546E7A">string</text>
+<text x="918" y="259.0" font-size="12px" font-weight="500" fill="#263238">city</text>
+<text x="1044" y="259.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="850" y="272" width="226" height="34" fill="#FFFFFF" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="910" y1="272" x2="910" y2="306" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="1036" y1="272" x2="1036" y2="306" stroke="#512DA8" stroke-width="0.8"/>
+<text x="858" y="293.0" font-size="12px" fill="#546E7A">int</text>
+<text x="918" y="293.0" font-size="12px" font-weight="500" fill="#263238">total_ports</text>
+<text x="1044" y="293.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+</g> <g>
+<rect x="850" y="500" width="250" height="36" fill="#EDE7F6" stroke="#512DA8" stroke-width="1.5" rx="3"/>
+<text x="975.0" y="523.0" text-anchor="middle" font-size="14px" font-weight="bold" fill="#0D47A1">Dim_Tariff_Plan</text>
+<rect x="850" y="536" width="250" height="34" fill="#FFFFFF" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="910" y1="536" x2="910" y2="570" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="1060" y1="536" x2="1060" y2="570" stroke="#512DA8" stroke-width="0.8"/>
+<text x="858" y="557.0" font-size="12px" fill="#546E7A">int</text>
+<text x="918" y="557.0" font-size="12px" font-weight="500" fill="#263238">tariff_id</text>
+<text x="1068" y="557.0" font-size="11px" font-weight="bold" fill="#C62828">PK</text>
+<rect x="850" y="570" width="250" height="34" fill="#F8FAFC" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="910" y1="570" x2="910" y2="604" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="1060" y1="570" x2="1060" y2="604" stroke="#512DA8" stroke-width="0.8"/>
+<text x="858" y="591.0" font-size="12px" fill="#546E7A">string</text>
+<text x="918" y="591.0" font-size="12px" font-weight="500" fill="#263238">plan_name</text>
+<text x="1068" y="591.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="850" y="604" width="250" height="34" fill="#FFFFFF" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="910" y1="604" x2="910" y2="638" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="1060" y1="604" x2="1060" y2="638" stroke="#512DA8" stroke-width="0.8"/>
+<text x="858" y="625.0" font-size="12px" fill="#546E7A">string</text>
+<text x="918" y="625.0" font-size="12px" font-weight="500" fill="#263238">rate_type</text>
+<text x="1068" y="625.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+<rect x="850" y="638" width="250" height="34" fill="#F8FAFC" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="910" y1="638" x2="910" y2="672" stroke="#512DA8" stroke-width="0.8"/>
+<line x1="1060" y1="638" x2="1060" y2="672" stroke="#512DA8" stroke-width="0.8"/>
+<text x="858" y="659.0" font-size="12px" fill="#546E7A">float</text>
+<text x="918" y="659.0" font-size="12px" font-weight="500" fill="#263238">rate_per_kwh</text>
+<text x="1068" y="659.0" font-size="11px" font-weight="bold" fill="#90A4AE"></text>
+</g>
+</svg>

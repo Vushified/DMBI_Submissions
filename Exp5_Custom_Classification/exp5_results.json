@@ -1,0 +1,18 @@
+{
+  "DT_Inbuilt_Gini": {
+    "accuracy": 61.39,
+    "train_time_ms": 10.374
+  },
+  "DT_Custom_Entropy": {
+    "accuracy": 60.4,
+    "train_time_ms": 15.351
+  },
+  "NB_Inbuilt_Gaussian": {
+    "accuracy": 66.34,
+    "train_time_ms": 17.648
+  },
+  "NB_Scratch_NumPy": {
+    "accuracy": 66.34,
+    "train_time_ms": 8.982
+  }
+}
