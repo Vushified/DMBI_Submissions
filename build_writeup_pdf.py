@@ -33,13 +33,6 @@ class NumberedCanvas(canvas.Canvas):
         self.saveState()
         self.setFont("Helvetica-Bold", 8)
         self.setFillColor(colors.HexColor("#37474F"))
-        self.drawString(54, 755, "VESIT · Department of Information Technology · DMBI Laboratory")
-        self.setFont("Helvetica", 8)
-        self.drawRightString(558, 755, "Vidushi Singh (Roll No. 53, D15A)")
-        self.setStrokeColor(colors.HexColor("#B0BEC5"))
-        self.setLineWidth(0.6)
-        self.line(54, 749, 558, 749)
-        
         self.line(54, 45, 558, 45)
         self.drawString(54, 34, "DMBI Laboratory Practicals (Exp 1–10) · Result, Inference & Conclusion Writeup")
         self.drawRightString(558, 34, f"Page {self._pageNumber} of {page_count}")
@@ -144,17 +137,10 @@ def generate_writeup_pdf(output_path):
         [
             Paragraph("<b>Name:</b> Vidushi Singh", table_cell),
             Paragraph("<b>Roll No:</b> 53", table_cell),
-            Paragraph("<b>Class / Div:</b> D15A", table_cell),
-            Paragraph("<b>Group:</b> D15A_09", table_cell)
-        ],
-        [
-            Paragraph("<b>Course:</b> DMBI Laboratory", table_cell),
-            Paragraph("<b>Branch:</b> Information Technology", table_cell),
-            Paragraph("<b>College:</b> VESIT, Chembur", table_cell),
-            Paragraph("<b>Academic Year:</b> 2026–2027", table_cell)
+            Paragraph("<b>Class / Div:</b> D15A", table_cell)
         ]
     ]
-    meta_table = Table(meta_data, colWidths=[150, 95, 115, 144])
+    meta_table = Table(meta_data, colWidths=[200, 150, 154])
     meta_table.setStyle(TableStyle([
         ('BACKGROUND', (0,0), (-1,-1), colors.HexColor('#ECEFF1')),
         ('BOX', (0,0), (-1,-1), 1, colors.HexColor('#B0BEC5')),
@@ -393,3 +379,4 @@ if __name__ == '__main__':
     out_dir = r'.\DMBI-Lab-Vidushi'
     target_pdf = os.path.join(out_dir, "DMBI_Experiments_1_to_10_Writeup_Vidushi_Singh.pdf")
     generate_writeup_pdf(target_pdf)
+

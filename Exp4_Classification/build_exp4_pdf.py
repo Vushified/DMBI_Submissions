@@ -30,12 +30,6 @@ class NumberedCanvas(canvas.Canvas):
         self.saveState()
         self.setFont("Helvetica", 8)
         self.setFillColor(colors.HexColor("#555555"))
-        self.drawString(54, 755, "VESIT · Department of Information Technology · DMBI Laboratory")
-        self.drawRightString(558, 755, "Vidushi Singh (Roll No. 53, D15A)")
-        self.setStrokeColor(colors.HexColor("#B0BEC5"))
-        self.setLineWidth(0.6)
-        self.line(54, 750, 558, 750)
-        
         self.line(54, 45, 558, 45)
         self.drawString(54, 34, "Experiment 4: Classification using RapidMiner & Python (Smart EV Analytics)")
         self.drawRightString(558, 34, f"Page {self._pageNumber} of {page_count}")
@@ -87,17 +81,10 @@ def build_pdf(pdf_path, img_dir):
         [
             Paragraph("<b>Name:</b> Vidushi Singh", table_cell),
             Paragraph("<b>Roll No:</b> 53", table_cell),
-            Paragraph("<b>Class / Div:</b> D15A", table_cell),
-            Paragraph("<b>Group:</b> D15A_09", table_cell)
-        ],
-        [
-            Paragraph("<b>Course:</b> Data Mining & Business Intelligence (DMBI)", table_cell),
-            Paragraph("<b>Semester:</b> VI", table_cell),
-            Paragraph("<b>Academic Year:</b> 2026–2027", table_cell),
-            Paragraph("<b>Experiment:</b> 04", table_cell)
+            Paragraph("<b>Class / Div:</b> D15A", table_cell)
         ]
     ]
-    meta_table = Table(meta_data, colWidths=[160, 90, 110, 144])
+    meta_table = Table(meta_data, colWidths=[200, 150, 154])
     meta_table.setStyle(TableStyle([
         ('BACKGROUND', (0,0), (-1,-1), colors.HexColor('#F0F4F8')),
         ('BOX', (0,0), (-1,-1), 1, colors.HexColor('#CFD8DC')),
