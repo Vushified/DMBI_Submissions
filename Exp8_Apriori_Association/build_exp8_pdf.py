@@ -108,12 +108,12 @@ def build_pdf(pdf_path, img_dir):
 
     # Theoretical Background & Formulas
     story.append(Paragraph("Theoretical Foundation of Apriori Association Mining", h1_style))
-    story.append(Paragraph("The Apriori algorithm operates on the fundamental <b>Apriori Property</b> (Anti-monotonicity of support): <i>All non-empty subsets of a frequent itemset must also be frequent</i>. If an itemset \\(I\\) is infrequent (\\(\\text{Support}(I) < s_{min}\\)), all supersets \\(I \\cup \\{x\\}\\) are immediately pruned without database scans.", body_style))
-    story.append(Paragraph("Key quantitative metrics defining rule quality \\(A \\Rightarrow B\\):", body_style))
-    story.append(Paragraph("$$\\text{Support}(A \\Rightarrow B) = P(A \\cup B) = \\frac{\\sigma(A \\cup B)}{N}$$", body_style))
-    story.append(Paragraph("$$\\text{Confidence}(A \\Rightarrow B) = P(B|A) = \\frac{\\text{Support}(A \\cup B)}{\\text{Support}(A)}$$", body_style))
-    story.append(Paragraph("$$\\text{Lift}(A \\Rightarrow B) = \\frac{P(B|A)}{P(B)} = \\frac{\\text{Confidence}(A \\Rightarrow B)}{\\text{Support}(B)}$$", body_style))
-    story.append(Paragraph("A \\(\\text{Lift} > 1.0\\) indicates positive correlation between antecedent and consequent, confirming genuine operational synergy beyond random chance.", body_style))
+    story.append(Paragraph("The Apriori algorithm operates on the fundamental <b>Apriori Property</b> (Anti-monotonicity of support): <i>All non-empty subsets of a frequent itemset must also be frequent</i>. If an itemset I is infrequent (Support(I) < min_support), all supersets are immediately pruned without database scans.", body_style))
+    story.append(Paragraph("Key quantitative metrics defining rule quality <b>A => B</b>:", body_style))
+    story.append(Paragraph("<font face='Courier' size='8.5'><b>Support(A => B) = P(A &cup; B) = count(A &cup; B) / N</b></font>", body_style))
+    story.append(Paragraph("<font face='Courier' size='8.5'><b>Confidence(A => B) = P(B|A) = Support(A &cup; B) / Support(A)</b></font>", body_style))
+    story.append(Paragraph("<font face='Courier' size='8.5'><b>Lift(A => B) = Confidence(A => B) / Support(B)</b></font>", body_style))
+    story.append(Paragraph("A <b>Lift > 1.0</b> indicates positive correlation between antecedent and consequent, confirming genuine operational synergy beyond random chance.", body_style))
 
     story.append(PageBreak())
 
@@ -182,7 +182,7 @@ def build_pdf(pdf_path, img_dir):
 
     # Conclusion
     story.append(Paragraph("Conclusion", h1_style))
-    story.append(Paragraph("In this experiment, the Apriori association mining algorithm was successfully implemented on 20,000 EV charging transactions. The downward-closure property efficiently curtailed candidate explosions, isolating 75 frequent patterns and 605 robust association rules. High-lift insights reveal that <b>{Long_Dwell_Duration} \\(\\Rightarrow\\) {Full_100_Charge}</b> exhibits a massive Lift of 4.41 and 100% confidence, confirming residential slow AC user dedication to top-up completion. Furthermore, <b>{Fast_DC_Charging, Low_Arrival_SoC} \\(\\Rightarrow\\) {High_Turnaround_Urgency}</b> (Lift: 2.20, Conf: 98.26%) underscores the acute operational demand of commercial fleets for prioritized fast-charging bay access.", body_style))
+    story.append(Paragraph("In this experiment, the Apriori association mining algorithm was successfully implemented on 20,000 EV charging transactions. The downward-closure property efficiently curtailed candidate explosions, isolating 75 frequent patterns and 605 robust association rules. High-lift insights reveal that <b>{Long_Dwell_Duration} =&gt; {Full_100_Charge}</b> exhibits a massive Lift of 4.41 and 100% confidence, confirming residential slow AC user dedication to top-up completion. Furthermore, <b>{Fast_DC_Charging, Low_Arrival_SoC} =&gt; {High_Turnaround_Urgency}</b> (Lift: 2.20, Conf: 98.26%) underscores the acute operational demand of commercial fleets for prioritized fast-charging bay access.", body_style))
 
     doc.build(story, canvasmaker=NumberedCanvas)
     print(f"Generated {pdf_path} successfully!")

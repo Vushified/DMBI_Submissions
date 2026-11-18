@@ -108,9 +108,9 @@ def build_pdf(pdf_path, img_dir):
 
     # Mathematical Foundations
     story.append(Paragraph("Mathematical Foundation of K-Means Clustering", h1_style))
-    story.append(Paragraph("K-Means partitions an unlabelled dataset \\(X = \\{x_1, x_2, \\dots, x_N\\} \\subset \\mathbb{R}^d\\) into \\(k\\) disjoint clusters \\(S = \\{S_1, S_2, \\dots, S_k\\}\\) by minimizing within-cluster variance (inertia):", body_style))
-    story.append(Paragraph("$$\\arg\\min_S \\sum_{i=1}^{k} \\sum_{x \\in S_i} \\| x - \\mu_i \\|^2$$", body_style))
-    story.append(Paragraph("where \\(\\mu_i = \\frac{1}{|S_i|} \\sum_{x \\in S_i} x\\) denotes the centroid of cluster \\(S_i\\). Initialization uses the <b>k-means++</b> scheme, selecting initial seeds with probability proportional to their squared Euclidean distance from the nearest existing centroid to accelerate convergence and prevent sub-optimal local minima.", body_style))
+    story.append(Paragraph("K-Means partitions an unlabelled dataset of N observations into <b>k</b> disjoint clusters S = {S<sub>1</sub>, S<sub>2</sub>, ..., S<sub>k</sub>} by minimizing the Within-Cluster Sum of Squares (WCSS / inertia):", body_style))
+    story.append(Paragraph("<font face='Courier' size='8.5'><b>WCSS = &Sigma;<sub>i=1..k</sub> &Sigma;<sub>x &isin; S<sub>i</sub></sub> || x - &mu;<sub>i</sub> ||<sup>2</sup></b></font>", body_style))
+    story.append(Paragraph("where <b>&mu;<sub>i</sub></b> denotes the centroid of cluster S<sub>i</sub>. Initialization uses the <b>k-means++</b> scheme, selecting initial seeds with probability proportional to their squared Euclidean distance from the nearest existing centroid to accelerate convergence and prevent sub-optimal local minima.", body_style))
 
     story.append(PageBreak())
 

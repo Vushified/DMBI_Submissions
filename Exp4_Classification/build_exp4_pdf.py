@@ -108,9 +108,9 @@ def build_pdf(pdf_path, img_dir):
 
     # Theory & RapidMiner Pipeline
     story.append(Paragraph("Theoretical Principles & RapidMiner Architecture", h1_style))
-    story.append(Paragraph("<b>Decision Tree (CART):</b> Recursively partitions the feature space into orthogonal hyperplanes by maximizing information gain or Gini reduction: \\(\\text{Gini}(D) = 1 - \\sum_{i=1}^{k} p_i^2\\). It yields transparent, human-auditable IF-THEN rules directly applicable to Battery Management System (BMS) controllers.", body_style))
-    story.append(Paragraph("<b>Gaussian Naïve Bayes:</b> Applies Bayes' Theorem: \\(P(Y|X) \\propto P(Y) \\prod_{j=1}^{d} P(X_j|Y)\\), modeling continuous features as Gaussian distributions: \\(P(X_j = x | Y = c) = \\frac{1}{\\sqrt{2\\pi\\sigma_c^2}} \\exp\\left(-\\frac{(x - \\mu_c)^2}{2\\sigma_c^2}\\right)\\). Despite the attribute independence assumption, it is computationally fast and highly robust against noisy telemetry.", body_style))
-    story.append(Paragraph("<b>RapidMiner Studio Workflow:</b> The pipeline maps cleanly to standard operators: <code>[Retrieve EV_Dataset] \\(\\rightarrow\\) [Select Attributes] \\(\\rightarrow\\) [Set Role (battery_stress_flag as label)] \\(\\rightarrow\\) [Split Data (80:20)] \\(\\rightarrow\\) [Decision Tree / Naive Bayes] \\(\\rightarrow\\) [Apply Model] \\(\\rightarrow\\) [Performance (Classification)]</code>.", body_style))
+    story.append(Paragraph("<b>Decision Tree (CART):</b> Recursively partitions the feature space into orthogonal hyperplanes by maximizing information gain or Gini reduction: <b>Gini(D) = 1 - &Sigma; p<sub>i</sub><sup>2</sup></b>. It yields transparent, human-auditable IF-THEN rules directly applicable to Battery Management System (BMS) controllers.", body_style))
+    story.append(Paragraph("<b>Gaussian Naïve Bayes:</b> Applies Bayes' Theorem: <b>P(Y|X) &prop; P(Y) &times; &Pi; P(X<sub>j</sub>|Y)</b>, modeling continuous features as Gaussian normal distributions with class mean &mu;<sub>c</sub> and variance &sigma;<sub>c</sub><sup>2</sup>. Despite the attribute independence assumption, it is computationally fast and highly robust against noisy telemetry.", body_style))
+    story.append(Paragraph("<b>RapidMiner Studio Workflow:</b> The pipeline maps cleanly to standard operators: <code>[Retrieve EV_Dataset] -> [Select Attributes] -> [Set Role (battery_stress_flag as label)] -> [Split Data (80:20)] -> [Decision Tree / Naive Bayes] -> [Apply Model] -> [Performance (Classification)]</code>.", body_style))
 
     story.append(PageBreak())
 

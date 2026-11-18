@@ -167,7 +167,7 @@ def build_pdf(pdf_path, img_dir):
     story.append(Paragraph("Theoretical Foundation", h1_style))
     story.append(Paragraph("A <b>Data Warehouse Schema</b> serves as the structural blueprint organizing business events into measurable numeric metrics (facts) and context-giving descriptive attributes (dimensions). In high-throughput IoT domains like EV charging networks, telemetry streams from smart EVSEs (Electric Vehicle Supply Equipment) and battery management systems (BMS) must support multi-grain slice-and-dice queries across temporal, geographical, vehicle, and tariff planes.", body_style))
     story.append(Paragraph("<b>Star Schema Architecture:</b> Employs a single central fact table directly referenced by non-normalized (denormalized) dimension tables. This provides minimal table join overhead, rapid OLAP roll-up/drill-down aggregation, and intuitive ad-hoc query formulations at the expense of controlled redundancy.", body_style))
-    story.append(Paragraph("<b>Snowflake Schema Architecture:</b> Normalizes dimension tables into progressive third-normal-form (3NF) relational sub-dimensions (e.g., Station $\\rightarrow$ City $\\rightarrow$ State $\\rightarrow$ Region). This eliminates attribute redundancy, minimizes storage footprint, and ensures strict master-data integrity, while introducing multi-table join overhead during analytical execution.", body_style))
+    story.append(Paragraph("<b>Snowflake Schema Architecture:</b> Normalizes dimension tables into progressive third-normal-form (3NF) relational sub-dimensions (e.g., Station -&gt; City -&gt; State -&gt; Region). This eliminates attribute redundancy, minimizes storage footprint, and ensures strict master-data integrity, while introducing multi-table join overhead during analytical execution.", body_style))
 
     story.append(PageBreak())
 
@@ -245,7 +245,7 @@ def build_pdf(pdf_path, img_dir):
 
     # Snowflake Schema
     story.append(Paragraph("3. Snowflake Schema: Enterprise Multi-Level Dimensional Hierarchy", h1_style))
-    story.append(Paragraph("In the enterprise Snowflake Schema, high-cardinality dimensions are normalized into distinct sub-tables. Station locations decompose into <code>Dim_Station \\(\\rightarrow\\) Dim_City \\(\\rightarrow\\) Dim_State</code>, while vehicles normalize into <code>Dim_EV_Vehicle \\(\\rightarrow\\) Dim_OEM_Brand \\(\\rightarrow\\) Dim_Vehicle_Category</code>.", body_style))
+    story.append(Paragraph("In the enterprise Snowflake Schema, high-cardinality dimensions are normalized into distinct sub-tables. Station locations decompose into <code>Dim_Station -&gt; Dim_City -&gt; Dim_State</code>, while vehicles normalize into <code>Dim_EV_Vehicle -&gt; Dim_OEM_Brand -&gt; Dim_Vehicle_Category</code>.", body_style))
 
     img_snow = os.path.join(img_dir, "SNOWFLAKE_EV_Platform.png")
     if os.path.exists(img_snow):

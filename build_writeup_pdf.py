@@ -34,7 +34,7 @@ class NumberedCanvas(canvas.Canvas):
         self.setFont("Helvetica-Bold", 8)
         self.setFillColor(colors.HexColor("#37474F"))
         self.line(54, 45, 558, 45)
-        self.drawString(54, 34, "DMBI Laboratory Practicals (Exp 1–10) · Result, Inference & Conclusion Writeup")
+        self.drawString(54, 34, "DMBI Practicals (Exp 1–10) · Result, Inference & Conclusion Writeup")
         self.drawRightString(558, 34, f"Page {self._pageNumber} of {page_count}")
         self.restoreState()
 
@@ -160,7 +160,7 @@ def generate_writeup_pdf(output_path):
                 "Two distinct dimensional Star Schemas and an enterprise Snowflake Schema were modeled and synthesized into vector architectural blueprints and comprehensive data dictionaries:",
                 "• <b>Star Schema 1 (Fact_Charging_Sessions):</b> Central operational fact logging transaction-grain metrics (<code>energy_consumed_kwh</code>, <code>charging_duration_min</code>, <code>initial_soc_pct</code>, <code>final_soc_pct</code>, <code>charging_cost_inr</code>, <code>peak_power_kw</code>) connected directly to five denormalized dimensions: <code>Dim_Driver</code>, <code>Dim_EV_Vehicle</code>, <code>Dim_Station</code>, <code>Dim_Tariff_Plan</code>, and <code>Dim_Time_Date</code>.",
                 "• <b>Star Schema 2 (Fact_Battery_Health):</b> Periodic BMS telemetry fact table capturing health metrics (<code>soh_percentage</code>, <code>cycle_count</code>, <code>internal_res_mohm</code>, <code>max_cell_temp_c</code>, <code>cell_delta_mv</code>) referenced by <code>Dim_Battery_Pack</code>, <code>Dim_EV_Vehicle</code>, and <code>Dim_Time_Date</code>.",
-                "• <b>Snowflake Schema:</b> Fully normalized dimensional representation decomposing Station geography (<code>Dim_Station</code> &rarr; <code>Dim_City</code> &rarr; <code>Dim_State</code>) and vehicle manufacturing hierarchies (<code>Dim_EV_Vehicle</code> &rarr; <code>Dim_OEM_Brand</code> &rarr; <code>Dim_Vehicle_Category</code>)."
+                "• <b>Snowflake Schema:</b> Fully normalized dimensional representation decomposing Station geography (<code>Dim_Station</code> -> <code>Dim_City</code> -> <code>Dim_State</code>) and vehicle manufacturing hierarchies (<code>Dim_EV_Vehicle</code> -> <code>Dim_OEM_Brand</code> -> <code>Dim_Vehicle_Category</code>)."
             ],
             "inference": [
                 "• <b>Denormalized Star Schemas</b> are optimal for high-throughput OLAP reporting, daily energy dispatch dashboards, and driver billing summaries. By pre-joining attributes within flat dimension tables, analytical queries execute with single-level hash joins, maximizing aggregation throughput.",
@@ -246,7 +246,7 @@ def generate_writeup_pdf(output_path):
             "domain": "Smart Electric Vehicle (EV) Charging & Battery Fleet Analytics",
             "result": [
                 "Unsupervised pattern discovery was performed on 20,000 charging records across 10 continuous telemetry attributes using K-Means++ in Python:",
-                "• <b>Elbow Method:</b> Evaluated Within-Cluster Sum of Squares (WCSS) across k &isin; [2, 8]. Inertia dropped steeply from 109,085 (k=2) to 48,348 (k=3) and 30,696 (k=4), forming a distinct elbow inflection point at <b>k = 4</b>.",
+                "• <b>Elbow Method:</b> Evaluated Within-Cluster Sum of Squares (WCSS) across k in [2, 8]. Inertia dropped steeply from 109,085 (k=2) to 48,348 (k=3) and 30,696 (k=4), forming a distinct elbow inflection point at <b>k = 4</b>.",
                 "• <b>Validation Metrics:</b> At k = 4, the clustering achieved a <b>Silhouette Score of 0.5679</b> (indicating strong cohesion and separation) and a <b>Davies-Bouldin Index of 0.6806</b> (well below 1.0, indicating compact clusters).",
                 "• <b>2D PCA Visualization:</b> Principal Component Analysis captured 71.4% of total variance across two dimensions, illustrating distinct, non-overlapping spatial boundaries.",
                 "• <b>Derived Personas:</b><br/>"
@@ -293,13 +293,13 @@ def generate_writeup_pdf(output_path):
                 "• <b>Frequent Itemsets:</b> Applying a minimum support threshold of s = 0.08 generated <b>75 frequent itemsets</b> across lengths k = 1, 2, 3.",
                 "• <b>Association Rules:</b> Filtered at a minimum confidence threshold of c = 0.40 and positive correlation (Lift &ge; 1.0), deriving <b>605 association rules</b>.",
                 "• <b>Key High-Lift Rules:</b><br/>"
-                "  - <code>{Long_Dwell_Duration} &rArr; {Full_100_Charge}</code>: Support = 20.00%, <b>Confidence = 100.00%</b>, <b>Lift = 4.408</b>.<br/>"
-                "  - <code>{High_Session_Cost, High_Turnaround_Urgency} &rArr; {Fast_DC_Charging}</code>: Support = 29.41%, Confidence = 80.24%, <b>Lift = 1.816</b>.<br/>"
-                "  - <code>{Fast_DC_Charging, Low_Arrival_SoC} &rArr; {High_Turnaround_Urgency}</code>: Support = 39.99%, Confidence = 98.26%, <b>Lift = 2.204</b>."
+                "  - <code>{Long_Dwell_Duration} => {Full_100_Charge}</code>: Support = 20.00%, <b>Confidence = 100.00%</b>, <b>Lift = 4.408</b>.<br/>"
+                "  - <code>{High_Session_Cost, High_Turnaround_Urgency} => {Fast_DC_Charging}</code>: Support = 29.41%, Confidence = 80.24%, <b>Lift = 1.816</b>.<br/>"
+                "  - <code>{Fast_DC_Charging, Low_Arrival_SoC} => {High_Turnaround_Urgency}</code>: Support = 39.99%, Confidence = 98.26%, <b>Lift = 2.204</b>."
             ],
             "inference": [
-                "• The rule <code>{Long_Dwell_Duration} &rArr; {Full_100_Charge}</code> with a Lift of 4.408 indicates that users who stay connected for over an hour are over four times more likely to charge to completion than the baseline population. This is characteristic of residential overnight chargers.",
-                "• The rule <code>{Fast_DC_Charging, Low_Arrival_SoC} &rArr; {High_Turnaround_Urgency}</code> exhibits an exceptionally high confidence (98.26%). Commercial taxi and delivery drivers systematically operate until battery depletion and demand high-throughput charging bays with zero turnaround delay.",
+                "• The rule <code>{Long_Dwell_Duration} => {Full_100_Charge}</code> with a Lift of 4.408 indicates that users who stay connected for over an hour are over four times more likely to charge to completion than the baseline population. This is characteristic of residential overnight chargers.",
+                "• The rule <code>{Fast_DC_Charging, Low_Arrival_SoC} => {High_Turnaround_Urgency}</code> exhibits an exceptionally high confidence (98.26%). Commercial taxi and delivery drivers systematically operate until battery depletion and demand high-throughput charging bays with zero turnaround delay.",
                 "• The downward-closure property (anti-monotonicity) of Apriori pruned candidate itemsets containing infrequent items early, avoiding combinatorial explosion on the 20,000 transactions."
             ],
             "conclusion": "The Apriori algorithm extracted actionable co-occurrence rules from continuous EV charging telemetry. Identifying that low initial SoC coupled with DC charging reliably indicates high driver turnaround urgency allows station operators to implement automated queue prioritization, reserve high-power stalls for commercial users, and apply dynamic idle-fee penalties for fully charged vehicles occupying fast chargers."

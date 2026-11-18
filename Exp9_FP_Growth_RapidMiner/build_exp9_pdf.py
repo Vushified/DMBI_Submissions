@@ -101,14 +101,14 @@ def build_pdf(pdf_path, img_dir):
     
     story.append(Paragraph("Objectives", h1_style))
     story.append(Paragraph("• Understand FP-Tree (Frequent Pattern Tree) construction and suffix-based conditional pattern base projection.", body_style))
-    story.append(Paragraph("• Eliminate combinatorial candidate generation bottlenecks \\(O(2^{|I|})\\) present in Apriori.", body_style))
-    story.append(Paragraph("• Replicate the RapidMiner operator chain: <code>[Retrieve] \\(\\rightarrow\\) [Numerical to Binominal] \\(\\rightarrow\\) [FP-Growth] \\(\\rightarrow\\) [Create Association Rules]</code>.", body_style))
+    story.append(Paragraph("• Eliminate combinatorial candidate generation bottlenecks O(2<sup>|I|</sup>) present in Apriori.", body_style))
+    story.append(Paragraph("• Replicate the RapidMiner operator chain: <code>[Retrieve] -&gt; [Numerical to Binominal] -&gt; [FP-Growth] -&gt; [Create Association Rules]</code>.", body_style))
     story.append(Paragraph("• Benchmark execution latency, pass count, and memory overhead between Apriori and FP-Growth.", body_style))
     story.append(Paragraph("• Extract actionable charging grid dispatch policies from high-confidence association rules.", body_style))
 
     # Theory & Comparative Table
     story.append(Paragraph("Theoretical Foundation: FP-Tree vs Apriori Architecture", h1_style))
-    story.append(Paragraph("Traditional Apriori requires \\(k\\) full passes over the transaction database to generate \\(k\\)-itemsets, creating massive I/O overhead on large datasets. <b>FP-Growth</b> (Han et al.) solves this by compressing the entire transaction database into a compact, highly redundant-free <b>FP-Tree (Frequent Pattern Tree)</b> using strictly two sequential scans:", body_style))
+    story.append(Paragraph("Traditional Apriori requires k full passes over the transaction database to generate k-itemsets, creating massive I/O overhead on large datasets. <b>FP-Growth</b> (Han et al.) solves this by compressing the entire transaction database into a compact, highly redundant-free <b>FP-Tree (Frequent Pattern Tree)</b> using strictly two sequential scans:", body_style))
     story.append(Paragraph("<b>Scan 1:</b> Computes individual item supports, discards infrequent items, and sorts frequent items in descending support frequency order.", body_style))
     story.append(Paragraph("<b>Scan 2:</b> Inserts ordered transactions as overlapping tree branches with shared prefix paths, maintaining horizontal linked-lists across identical items in a Header Table.", body_style))
     story.append(Paragraph("<b>Recursive Conditional Mining:</b> Employs divide-and-conquer to recursively project conditional FP-Trees starting from low-frequency suffixes, mining frequent patterns without ever creating candidate pairs.", body_style))
@@ -120,11 +120,11 @@ def build_pdf(pdf_path, img_dir):
     comp_data = [
         [Paragraph("Algorithmic Dimension", table_hdr), Paragraph("Apriori Algorithm", table_hdr), Paragraph("FP-Growth Algorithm", table_hdr)],
         [Paragraph("Core Data Structure", table_cell_bold), Paragraph("Array / Hash Tree of Candidate Sets", table_cell), Paragraph("Highly Compressed Prefix FP-Tree + Header Link Table", table_cell)],
-        [Paragraph("Candidate Generation", table_cell_bold), Paragraph("Combinatorial join \\(L_{k-1} \\bowtie L_{k-1}\\); exponential \\(O(2^n)\\)", table_cell), Paragraph("Completely eliminated (Direct recursive tree mining)", table_cell)],
-        [Paragraph("Database Scans", table_cell_bold), Paragraph("\\(k_{max} + 1\\) full sequential scans (Heavy disk I/O)", table_cell), Paragraph("Exactly 2 sequential scans (In-memory execution)", table_cell)],
+        [Paragraph("Candidate Generation", table_cell_bold), Paragraph("Combinatorial join L<sub>k-1</sub> &times; L<sub>k-1</sub>; exponential O(2<sup>n</sup>)", table_cell), Paragraph("Completely eliminated (Direct recursive tree mining)", table_cell)],
+        [Paragraph("Database Scans", table_cell_bold), Paragraph("k<sub>max</sub> + 1 full sequential scans (Heavy disk I/O)", table_cell), Paragraph("Exactly 2 sequential scans (In-memory execution)", table_cell)],
         [Paragraph("Memory Overhead", table_cell_bold), Paragraph("Huge memory footprint storing candidate combinations", table_cell), Paragraph("Compact tree structure fits directly in RAM cache", table_cell)],
         [Paragraph("Mining Paradigm", table_cell_bold), Paragraph("Breadth-First Search (Level-wise generation)", table_cell), Paragraph("Depth-First Search (Suffix-based divide-and-conquer)", table_cell)],
-        [Paragraph("Scalability with Dataset Size", table_cell_bold), Paragraph("Degrades rapidly on low support thresholds", table_cell), Paragraph("Linear \\(O(N)\\) scalability; ideal for massive streaming data", table_cell)],
+        [Paragraph("Scalability with Dataset Size", table_cell_bold), Paragraph("Degrades rapidly on low support thresholds", table_cell), Paragraph("Linear O(N) scalability; ideal for massive streaming data", table_cell)],
         [Paragraph("RapidMiner Operator", table_cell_bold), Paragraph("<code>Apriori</code> operator", table_cell), Paragraph("<code>FP-Growth</code> operator (Standard production choice)", table_cell)]
     ]
     t_comp = Table(comp_data, colWidths=[130, 187, 187])

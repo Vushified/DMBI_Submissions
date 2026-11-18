@@ -111,11 +111,11 @@ def build_pdf(pdf_path, img_dir):
 
     # Algorithmic Formulation
     story.append(Paragraph("Mathematical Formulation: From-Scratch Gaussian Naïve Bayes", h1_style))
-    story.append(Paragraph("The scratch classifier estimates class-conditional Gaussian probability density functions across each continuous telemetry dimension \\(j\\):", body_style))
-    story.append(Paragraph("$$\\mathcal{N}(x_j; \\mu_{cj}, \\sigma_{cj}^2) = \\frac{1}{\\sqrt{2\\pi(\\sigma_{cj}^2 + \\epsilon)}} \\exp\\left(-\\frac{(x_j - \\mu_{cj})^2}{2(\\sigma_{cj}^2 + \\epsilon)}\\right)$$", body_style))
+    story.append(Paragraph("The scratch classifier estimates class-conditional Gaussian probability density functions across each continuous telemetry dimension <b>j</b> using Gaussian likelihood with numerical variance smoothing &epsilon; = 10<sup>-9</sup>:", body_style))
+    story.append(Paragraph("<font face='Courier' size='8'><b>P(x<sub>j</sub> | class c) = [ 1 / &radic;(2&pi;(&sigma;<sub>cj</sub><sup>2</sup> + &epsilon;)) ] &times; exp( -(x<sub>j</sub> - &mu;<sub>cj</sub>)<sup>2</sup> / (2(&sigma;<sub>cj</sub><sup>2</sup> + &epsilon;)) )</b></font>", body_style))
     story.append(Paragraph("To prevent numerical underflow with high-dimensional floating-point products, joint probabilities are evaluated in log-likelihood space:", body_style))
-    story.append(Paragraph("$$\\hat{y} = \\arg\\max_{c \\in \\mathcal{C}} \\left[ \\ln P(Y = c) + \\sum_{j=1}^{d} \\ln \\mathcal{N}(x_j; \\mu_{cj}, \\sigma_{cj}^2) \\right]$$", body_style))
-    story.append(Paragraph("Variance smoothing parameter \\(\\epsilon = 10^{-9}\\) guarantees numerical stability in zero-variance telemetry bins.", body_style))
+    story.append(Paragraph("<font face='Courier' size='8'><b>Predicted Class y = argmax<sub>c</sub> [ ln(P(Y = c)) + &Sigma; ln(P(x<sub>j</sub> | class c)) ]</b></font>", body_style))
+    story.append(Paragraph("Variance smoothing parameter <b>&epsilon; = 10<sup>-9</sup></b> guarantees numerical stability in zero-variance telemetry bins.", body_style))
 
     story.append(PageBreak())
 
